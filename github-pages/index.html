@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ریتینگ تازه برنامه‌ها و سریال‌های ترکی با منبع رسمی TİAK">
+  <title>دیزی‌متر | ریتینگ تازه تلویزیون ترکیه</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="دیزی‌متر"><b>D</b><span><strong>DiziMeter</strong><small>دیزی‌متر</small></span></a>
+    <nav><a href="#ratings">ریتینگ امروز</a><a href="#method">روش کار</a><a href="https://github.com/nimania/dizimeter">گیت‌هاب</a></nav>
+    <span class="live"><i></i> به‌روزرسانی خودکار</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">نبض تلویزیون ترکیه</span>
+        <h1>عدد واقعی،<br><em>بدون دیتای نمایشی.</em></h1>
+        <p>جدول رسمی پربیننده‌ترین برنامه‌های ترکیه، مستقیم از TİAK و با انتشار خودکار.</p>
+        <a href="#ratings" class="cta">دیدن تازه‌ترین ریتینگ ↓</a>
+      </div>
+      <div class="hero-number">
+        <span>صدرنشین آخرین جدول</span>
+        <strong id="top-rating">—</strong>
+        <small id="top-program">در حال دریافت داده…</small>
+      </div>
+    </section>
+
+    <section id="ratings" class="ratings-section">
+      <div class="section-title">
+        <div><span>آخرین انتشار رسمی</span><h2>جدول ریتینگ</h2></div>
+        <div class="date-box"><small>تاریخ داده</small><strong id="data-date">—</strong></div>
+      </div>
+
+      <div id="loading" class="notice">در حال بارگذاری آخرین دادهٔ منتشرشده…</div>
+      <div id="error" class="notice error" hidden>داده موقتاً در دسترس نیست. نسخهٔ قبلی حذف نشده و سامانه دوباره تلاش می‌کند.</div>
+      <div class="table-shell" id="table-shell" hidden>
+        <table>
+          <thead><tr><th>رتبه</th><th>برنامه / سریال</th><th>شبکه</th><th>ریتینگ Total</th></tr></thead>
+          <tbody id="ratings-body"></tbody>
+        </table>
+      </div>
+      <p class="source-line">منبع: <a href="https://tiak.com.tr/" target="_blank" rel="noreferrer">TİAK</a> · گروه ۵+ سال، تمام افراد · زمان آخرین دریافت: <span id="fetched-at">—</span></p>
+    </section>
+
+    <section id="method" class="method">
+      <article><b>۰۱</b><h3>منبع رسمی</h3><p>رتبه و عدد Total فقط از جدول عمومی TİAK خوانده می‌شود؛ عدد AB یا ABC1 حدس زده نمی‌شود.</p></article>
+      <article><b>۰۲</b><h3>انتشار خودکار</h3><p>GitHub Actions هر دو ساعت منبع را بررسی و در صورت وجود دادهٔ معتبر، همین صفحه را دوباره منتشر می‌کند.</p></article>
+      <article><b>۰۳</b><h3>Dizilah، فقط بررسی ثانویه</h3><p>Dizilah پشت محافظ ضدربات است؛ بنابراین بدون مجوز یا دورزدن محافظ، منبع مستقیم سامانه نیست.</p></article>
+    </section>
+
+    <section class="recap-note">
+      <span>ری‌کپ‌ها</span>
+      <h2>دیتای ساختگی منتشر نمی‌کنیم.</h2>
+      <p>بخش ری‌کپ وقتی فعال می‌شود که متن هر قسمت از منبع قابل استناد و دارای مجوز جمع‌آوری شود.</p>
+    </section>
+  </main>
+
+  <footer><div class="brand"><b>D</b><span><strong>DiziMeter</strong><small>قصه، عدد، منبع</small></span></div><p>یک پروژهٔ متن‌باز برای مخاطبان فارسی‌زبان سریال‌های ترکی.</p><a href="https://github.com/nimania/dizimeter">مشاهده کد</a></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

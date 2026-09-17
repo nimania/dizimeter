@@ -1,0 +1,72 @@
+{
+  "date": "16.09.2026",
+  "fetchedAt": "2026-09-17T17:03:10.352Z",
+  "source": {
+    "name": "TİAK",
+    "url": "https://tiak.com.tr/"
+  },
+  "audience": "5+ Yaş Tüm Kişiler",
+  "metric": "Rating %",
+  "rows": [
+    {
+      "rank": 1,
+      "rating": 7.42,
+      "network": "SHOW TV",
+      "program": "SEVDAN BIR ATES"
+    },
+    {
+      "rank": 2,
+      "rating": 4.3,
+      "network": "ATV",
+      "program": "MUGE ANLI ILE TATLI SERT"
+    },
+    {
+      "rank": 3,
+      "rating": 3.68,
+      "network": "SHOW TV",
+      "program": "SEVDAN BIR ATES (OZET)"
+    },
+    {
+      "rank": 4,
+      "rating": 3.34,
+      "network": "TV8",
+      "program": "MASTERCHEF TURKIYE"
+    },
+    {
+      "rank": 5,
+      "rating": 3.31,
+      "network": "ATV",
+      "program": "ESRA EROL'DA"
+    },
+    {
+      "rank": 6,
+      "rating": 2.78,
+      "network": "ATV",
+      "program": "ATV ANA HABER"
+    },
+    {
+      "rank": 7,
+      "rating": 2.49,
+      "network": "NOW",
+      "program": "OZAN GUNDOGDU ILE NOW ANA HABER"
+    },
+    {
+      "rank": 8,
+      "rating": 2.29,
+      "network": "SHOW TV",
+      "program": "SHOW ANA HABER"
+    },
+    {
+      "rank": 9,
+      "rating": 2.28,
+      "network": "ATV",
+      "program": "ATV GUN ORTASI"
+    },
+    {
+      "rank": 10,
+      "rating": 2.13,
+      "network": "KANAL D",
+      "program": "KANAL D ANA HABER"
+    }
+  ]
+}
