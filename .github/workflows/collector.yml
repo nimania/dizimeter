@@ -8,6 +8,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   collect:
+    if: ${{ vars.DIZIMETER_AUTOMATION_ENABLED == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
