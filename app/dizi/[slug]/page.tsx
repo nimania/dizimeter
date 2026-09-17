@@ -1,0 +1,10 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { ArrowRight } from "lucide-react";
+import { findSeries, latestRecaps, series } from "@/lib/demo-data";
+
+export function generateStaticParams(){return series.map(item=>({slug:item.slug}))}
+export default async function SeriesPage({params}:{params:Promise<{slug:string}>}){
+  const {slug}=await params; const item=findSeries(slug); if(!item)notFound(); const recap=latestRecaps.find(x=>x.slug===slug);
+  return <main dir="rtl" className="inner-page"><div className="detail-hero"><div className="shell detail-inner"><Link href="/" className="back" style={{color:"white"}}><ArrowRight size={16}/> صفحه اصلی</Link><div className="detail-meta"><span>{item.network}</span><span>{item.airDay}</span><span>در حال پخش</span></div><h1>{item.titleFa}</h1><p>{item.titleTr}</p><div className="detail-summary">پرونده سریال، روند ریتینگ، خلاصه قسمت‌ها و تغییرات مهم داستان؛ این صفحه پس از هر پخش به‌صورت خودکار به‌روزرسانی خواهد شد.</div><div className="score-strip"><div><span>TOTAL</span><strong>{item.total.toFixed(2)}</strong></div><div><span>AB</span><strong>{item.ab.toFixed(2)}</strong></div><div><span>ABC1</span><strong>{item.abc1.toFixed(2)}</strong></div></div></div></div><section className="shell story"><article><span className="eyebrow" style={{color:"#9e1731",borderColor:"#cabdb0"}}>قسمت {item.episode}</span><h2>{recap?.title??"قصه تا اینجا"}</h2><p>{recap?.summary??"ری‌کپ این قسمت پس از تکمیل پردازش منابع رسمی منتشر می‌شود."}</p><p>نسخه کامل شامل روایت خطی اتفاقات، نقطه عطف هر شخصیت، پایان قسمت و آنچه باید پیش از قسمت بعد بدانید خواهد بود. هر ادعا به داده یا منبع ثبت‌شده در سامانه متصل می‌شود.</p></article><aside className="fact-card"><h3>شناسنامه پخش</h3><dl><div><dt>نام ترکی</dt><dd dir="ltr">{item.titleTr}</dd></div><div><dt>شبکه</dt><dd>{item.network}</dd></div><div><dt>روز پخش</dt><dd>{item.airDay}</dd></div><div><dt>آخرین قسمت</dt><dd>{item.episode}</dd></div><div><dt>وضعیت داده</dt><dd>نسخه نمایشی</dd></div></dl></aside></section></main>
+}

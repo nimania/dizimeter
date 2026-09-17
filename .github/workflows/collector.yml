@@ -1,0 +1,22 @@
+name: DiziMeter Collector
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+concurrency:
+  group: dizimeter-collector
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Collect and submit source snapshots
+        env:
+          DIZIMETER_INGEST_URL: ${{ secrets.DIZIMETER_INGEST_URL }}
+          DIZIMETER_INGEST_SECRET: ${{ secrets.DIZIMETER_INGEST_SECRET }}
+        run: node automation/collector.mjs

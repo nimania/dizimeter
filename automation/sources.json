@@ -1,0 +1,11 @@
+[
+  {"key":"tiak-ratings","name":"TİAK public ratings","url":"https://tiak.com.tr/tablolar","kind":"ratings","priority":10,"authority":"primary"},
+  {"key":"dizilah-calendar","name":"Dizilah calendar","url":"https://dizilah.com/calendar","kind":"schedule","priority":30,"authority":"secondary"},
+  {"key":"dizilah-ratings","name":"Dizilah ratings","url":"https://dizilah.com/ratings","kind":"ratings","priority":35,"authority":"secondary"},
+  {"key":"dizilah-status","name":"Dizilah cancellation buzz","url":"https://dizilah.com/tv-renewals-cancellations","kind":"status","priority":40,"authority":"secondary"},
+  {"key":"atv","name":"ATV","url":"https://www.atv.com.tr/diziler","kind":"official-network","priority":20,"authority":"primary"},
+  {"key":"kanald","name":"Kanal D","url":"https://www.kanald.com.tr/diziler","kind":"official-network","priority":20,"authority":"primary"},
+  {"key":"showtv","name":"Show TV","url":"https://www.showtv.com.tr/diziler","kind":"official-network","priority":20,"authority":"primary"},
+  {"key":"nowtv","name":"NOW","url":"https://www.nowtv.com.tr/diziler","kind":"official-network","priority":20,"authority":"primary"},
+  {"key":"trt1","name":"TRT 1","url":"https://www.trt1.com.tr/diziler","kind":"official-network","priority":20,"authority":"primary"}
+]
