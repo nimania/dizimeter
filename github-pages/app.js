@@ -1,28 +1,7 @@
-const faDigits = new Intl.NumberFormat("fa-IR", { maximumFractionDigits: 2, minimumFractionDigits: 2 });
-
-function formatDate(value) {
-  const [day, month, year] = value.split(".").map(Number);
-  return new Intl.DateTimeFormat("fa-IR", { dateStyle: "long" }).format(new Date(Date.UTC(year, month - 1, day)));
-}
-
-async function loadRatings() {
-  try {
-    const response = await fetch(`data/ratings.json?v=${Date.now()}`, { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    const rows = data.rows.map((row) => `<tr><td><b class="rank">${new Intl.NumberFormat("fa-IR").format(row.rank)}</b></td><td class="program" dir="ltr">${row.program}</td><td><span class="network">${row.network}</span></td><td class="score">${faDigits.format(row.rating)}</td></tr>`).join("");
-    document.querySelector("#ratings-body").innerHTML = rows;
-    document.querySelector("#data-date").textContent = formatDate(data.date);
-    document.querySelector("#fetched-at").textContent = new Intl.DateTimeFormat("fa-IR", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Tehran" }).format(new Date(data.fetchedAt));
-    document.querySelector("#top-rating").textContent = faDigits.format(data.rows[0].rating);
-    document.querySelector("#top-program").textContent = `${data.rows[0].program} · ${data.rows[0].network}`;
-    document.querySelector("#loading").hidden = true;
-    document.querySelector("#table-shell").hidden = false;
-  } catch (error) {
-    console.error(error);
-    document.querySelector("#loading").hidden = true;
-    document.querySelector("#error").hidden = false;
-  }
-}
-
-loadRatings();
+const faInt=new Intl.NumberFormat("fa-IR"),faScore=new Intl.NumberFormat("fa-IR",{maximumFractionDigits:2,minimumFractionDigits:2});let ratings=[],activeFilter="all",activeSort="rank";
+function categoryFor(name){const v=name.toUpperCase();if(/HABER|GUN ORTASI/.test(v))return"news";if(/MASTERCHEF|ESRA EROL|MUGE ANLI/.test(v))return"entertainment";return"series"}function categoryLabel(c){return{series:"سریال",entertainment:"سرگرمی",news:"خبر"}[c]}
+function shortDate(value){const[d,m,y]=value.split(".").map(Number);return new Intl.DateTimeFormat("fa-IR",{month:"short",day:"numeric"}).format(new Date(Date.UTC(y,m-1,d)))}
+function render(){const filtered=activeFilter==="all"?ratings:ratings.filter(r=>categoryFor(r.program)===activeFilter);const sorted=[...filtered].sort(activeSort==="network"?(a,b)=>a.network.localeCompare(b.network)||a.rank-b.rank:(a,b)=>a.rank-b.rank);document.querySelector("#ratings-list").innerHTML=sorted.length?sorted.map(r=>{const c=categoryFor(r.program);return`<article class="rating-card"><b class="rank">${faInt.format(r.rank)}</b><div class="rating-main"><div class="rating-meta"><span class="tag">${categoryLabel(c)}</span><span class="network">${r.network}</span></div><h3>${r.program}</h3><p>رتبهٔ ${faInt.format(r.rank)} در جدول رسمی گروه ۵+ سال، تمام افراد</p></div><div class="score"><strong>${faScore.format(r.rating)}</strong><span>Rating %</span></div></article>`}).join(""):`<div class="notice">در این دسته برنامه‌ای وجود ندارد.</div>`}
+async function loadRatings(){try{const response=await fetch(`data/ratings.json?v=${Date.now()}`,{cache:"no-store"});if(!response.ok)throw new Error(`HTTP ${response.status}`);const data=await response.json();ratings=data.rows;const hours=Math.max(0,Math.round((Date.now()-new Date(data.fetchedAt))/3600000));document.querySelector("#fetched-at").textContent=new Intl.RelativeTimeFormat("fa-IR",{numeric:"auto"}).format(-hours,"hour");document.querySelector("#summary-count").textContent=faInt.format(data.rows.length);document.querySelector("#summary-date").textContent=shortDate(data.date);document.querySelector("#summary-top").textContent=faScore.format(data.rows[0].rating);document.querySelector("#top-rating").textContent=faScore.format(data.rows[0].rating);document.querySelector("#top-program").textContent=data.rows[0].program;document.querySelector("#top-network").textContent=data.rows[0].network;document.querySelector("#loading").hidden=true;document.querySelector("#ratings-list").hidden=false;render()}catch(error){console.error(error);document.querySelector("#loading").hidden=true;document.querySelector("#error").hidden=false}}
+document.querySelectorAll(".filter").forEach(button=>button.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));button.classList.add("active");activeFilter=button.dataset.filter;render()}));document.querySelectorAll(".sort").forEach(button=>button.addEventListener("click",()=>{document.querySelectorAll(".sort").forEach(x=>x.classList.remove("active"));button.classList.add("active");activeSort=button.dataset.sort;render()}));
+const storedTheme=localStorage.getItem("dizimeter-theme");if(storedTheme)document.documentElement.dataset.theme=storedTheme;document.querySelector("#theme-toggle").addEventListener("click",()=>{const next=document.documentElement.dataset.theme==="dark"?"light":"dark";document.documentElement.dataset.theme=next;localStorage.setItem("dizimeter-theme",next)});loadRatings();
