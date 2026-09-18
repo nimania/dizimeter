@@ -10,7 +10,7 @@
     const net = networks[slug];
     if (!net) throw new Error("network not found");
 
-    document.title = `${net.name} | دیزی‌متر`;
+    document.title = `${net.name} | مشکی مدیا`;
     $("#net-name").textContent = net.name;
     $("#net-name-fa").textContent = net.nameFa || "";
     $("#net-logo").src = `${D.ROOT}images/networks/${net.slug}.svg`;

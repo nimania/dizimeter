@@ -1,4 +1,4 @@
-name: Publish DiziMeter to GitHub Pages
+name: Publish Meshki Media to GitHub Pages
 
 on:
   push:

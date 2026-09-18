@@ -1,4 +1,4 @@
-# DiziMeter
+# Meshki Media
 
 A Persian-first, automation-first reference for Turkish TV series: schedules, episode recaps, daily ratings, and renewal/cancellation signals.
 

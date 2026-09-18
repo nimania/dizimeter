@@ -1,4 +1,4 @@
-name: DiziMeter Collector
+name: Meshki Media Collector
 on:
   schedule:
     - cron: "17 */2 * * *"

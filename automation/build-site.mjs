@@ -15,11 +15,11 @@ const HEAD = (root, title, desc, extra = "") => `<!doctype html>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="${desc}">
 <title>${title}</title>
-<link rel="icon" href="${root}favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="${root}styles.css?v=20260918">${extra}
+<link rel="icon" href="${root}images/meshki-media-logo.png" type="image/png"><link rel="apple-touch-icon" href="${root}images/meshki-media-logo.png">
+<link rel="stylesheet" href="${root}styles.css?v=20260918b">${extra}
 </head>
 <body>
-<header class="app-header"><a class="brand" href="${root}"><strong>دیزی‌متر</strong><span>هوش سریال ترکی</span></a><div class="header-actions"><button id="theme-toggle" class="icon-button" aria-label="روشن یا تیره">◐</button><a class="icon-button" href="${root}" aria-label="خانه">⌂</a></div></header>`;
+<header class="app-header"><a class="brand" href="${root}"><img class="brand-logo" src="${root}images/meshki-media-logo.png" alt="مشکی مدیا" width="34" height="34"><span class="brand-text"><strong>مشکی مدیا</strong><span>هوش سریال ترکی</span></span></a><div class="header-actions"><button id="theme-toggle" class="icon-button" aria-label="روشن یا تیره">◐</button><a class="icon-button" href="${root}" aria-label="خانه">⌂</a></div></header>`;
 
 const FOOT = (root, boot, scripts) => `${boot}
 <script src="${root}dizimeter.js?v=20260918" defer></script>
@@ -44,7 +44,7 @@ function networkSvg(net) {
 // ---- Series page -----------------------------------------------------------
 function seriesPage(s) {
   const root = "../../";
-  const head = HEAD(root, `${s.titleFa} | دیزی‌متر`, `پروفایل، بازیگران و ری‌کپ قسمت‌های ${s.titleFa} (${s.titleTr})`);
+  const head = HEAD(root, `${s.titleFa} | مشکی مدیا`, `پروفایل، بازیگران و ری‌کپ قسمت‌های ${s.titleFa} (${s.titleTr})`);
   const body = `
 <main class="profile-shell">
 <div class="crumbs"><a href="${root}">خانه</a><span>/</span><span id="net-badge"></span></div>
@@ -65,7 +65,7 @@ function seriesPage(s) {
 // ---- Episode page ----------------------------------------------------------
 function episodePage(s, ep) {
   const root = "../../../";
-  const head = HEAD(root, `${s.titleFa} — قسمت ${ep.number} | دیزی‌متر`, `ریتینگ، عکس‌ها و خلاصهٔ قسمت ${ep.number} سریال ${s.titleFa}`);
+  const head = HEAD(root, `${s.titleFa} — قسمت ${ep.number} | مشکی مدیا`, `ریتینگ، عکس‌ها و خلاصهٔ قسمت ${ep.number} سریال ${s.titleFa}`);
   const body = `
 <main class="profile-shell">
 <div class="crumbs"><a href="${root}">خانه</a><span>/</span><a id="crumb-series" href="#">سریال</a><span>/</span><span>قسمت ${ep.number}</span></div>
@@ -82,7 +82,7 @@ function episodePage(s, ep) {
 // ---- Network page ----------------------------------------------------------
 function networkPage(net) {
   const root = "../../";
-  const head = HEAD(root, `${net.name} | دیزی‌متر`, `سریال‌ها و ریتینگ شبکهٔ ${net.name}`);
+  const head = HEAD(root, `${net.name} | مشکی مدیا`, `سریال‌ها و ریتینگ شبکهٔ ${net.name}`);
   const body = `
 <main class="app-shell">
 <section class="net-hero" style="--net-color:${net.color}"><div class="net-hero-top"><img id="net-logo" src="${root}images/networks/${net.slug}.svg" alt="${net.name}"><div><h1 id="net-name">${net.name}</h1><div class="net-fa" id="net-name-fa"></div></div></div><div class="net-meta"><span><b id="net-count">۰</b> سریال</span><a id="net-site" href="${net.site || "#"}" target="_blank" rel="noreferrer">سایت رسمی ↗</a></div></section>
@@ -96,7 +96,7 @@ function networkPage(net) {
 // ---- Networks index --------------------------------------------------------
 function networksIndex() {
   const root = "../";
-  const head = HEAD(root, `شبکه‌ها | دیزی‌متر`, `فهرست شبکه‌های تلویزیون ترکیه و سریال‌هایشان`);
+  const head = HEAD(root, `شبکه‌ها | مشکی مدیا`, `فهرست شبکه‌های تلویزیون ترکیه و سریال‌هایشان`);
   const body = `
 <main class="app-shell">
 <section class="intro"><h1>شبکه‌ها</h1><p>سریال‌های در حال پخش را بر اساس شبکه مرور کنید</p></section>

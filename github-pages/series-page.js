@@ -11,7 +11,7 @@
     if (!d) throw new Error("not found");
     const net = networks[d.network];
 
-    document.title = `${d.titleFa} | دیزی‌متر`;
+    document.title = `${d.titleFa} | مشکی مدیا`;
     $("#title-fa").textContent = d.titleFa;
     $("#title-tr").textContent = d.titleTr;
     $("#status").textContent = d.status;

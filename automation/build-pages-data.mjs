@@ -77,7 +77,7 @@ const controller = new AbortController();
 const timeout = setTimeout(() => controller.abort(), 25_000);
 try {
   const response = await fetch(SOURCE_URL, {
-    headers: { accept: "text/html,application/xhtml+xml", "user-agent": "DiziMeter/1.0 (+https://nimania.github.io/dizimeter/)" },
+    headers: { accept: "text/html,application/xhtml+xml", "user-agent": "MeshkiMedia/1.0 (+https://nimania.github.io/meshkimedia/)" },
     signal: controller.signal,
   });
   if (!response.ok) throw new Error(`TİAK returned HTTP ${response.status}`);

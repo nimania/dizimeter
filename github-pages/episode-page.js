@@ -15,7 +15,7 @@
     if (!ep) throw new Error("episode not found");
     const net = networks[s.network];
 
-    document.title = `${s.titleFa} — قسمت ${D.fmtInt(ep.number)} | دیزی‌متر`;
+    document.title = `${s.titleFa} — قسمت ${D.fmtInt(ep.number)} | مشکی مدیا`;
 
     // Breadcrumb + title
     $("#crumb-series").textContent = s.titleFa;
