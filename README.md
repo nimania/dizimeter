@@ -12,13 +12,31 @@ A Persian-first, automation-first reference for Turkish TV series: schedules, ep
 
 ## Current slice
 
-- Persian RTL homepage with ratings, series cards, recaps, search, and detail routes
+- Persian RTL homepage with Total / AB / ABC1 rating modes, a rolling 10-day window, category + network filters, and browse-by-network
+- Per-series profile pages (`/dizi/<slug>/`) with cast, episode recaps, and each episode's rating in all three modes
+- Per-episode profile pages (`/dizi/<slug>/bolum-<n>/`) with photo gallery, fragman link, summary, ratings, and prev/next navigation
+- Per-network pages (`/kanal/<slug>/`) with an original network mark, the network's series, and its latest-day placements; plus a networks index (`/kanal/`)
 - D1 schema for series, episodes, ratings, recaps, sources, snapshots, and ingestion runs
 - R2-backed source snapshot ingestion endpoint
 - Scheduled GitHub Actions collector scaffold
 - TİAK, Dizilah, and official broadcaster source registry
 
-The visible ratings and recap copy are explicitly marked as demo data until the normalization and editorial pipeline is connected to live sources.
+### Static GitHub Pages build (`github-pages/`)
+
+The public site is a data-driven static build. Content lives in three JSON files under `github-pages/data/`:
+
+- `networks.json` — networks, brand colors, and TİAK rating keys
+- `series.json` — series metadata, cast, seasons, and episodes (with photos and fragman)
+- `ratings.json` — a rolling 10-day window of the daily Total / AB / ABC1 tables
+
+Two scripts run in the Pages workflow:
+
+- `automation/build-pages-data.mjs` — fetches TİAK's public table and appends today's **Total** (with real `Rating %`) into the 10-day window, folding Turkish letters to ASCII so program names match series keys. TİAK's public homepage exposes only Total; AB/ABC1 rankings are preserved across runs and their exact numbers stay `null` until a member-data source is wired in. The script never invents numbers.
+- `automation/build-site.mjs` — regenerates every series, episode, network, and index page (and the SVG network marks) from the JSON.
+
+To add a series, add it to `series.json` and re-run `node automation/build-site.mjs`.
+
+Ratings numbers come only from TİAK; where a real number is unavailable, the UI shows the official **rank** instead of a guessed value.
 
 ## Stack
 

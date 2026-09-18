@@ -1,1 +1,431 @@
-{"sevdan-bir-ates":{"slug":"sevdan-bir-ates","titleFa":"سِودان بیر آتش","titleTr":"Sevdan Bir Ateş","network":"Show TV","studio":"CNP Film","year":2026,"status":"در حال پخش","airing":"چهارشنبه‌ها ساعت ۲۰:۰۰","genre":["درام","عاشقانه","خانوادگی"],"hero":"https://mo.ciner.com.tr/showtv/iu/1920x1080_5/sevdan-bir-ates.jpg?v=1789590446","synopsis":"مراسم ازدواج میرزا و لیلا چند ساعت مانده به عقد، با ناپدیدشدن لیلا نیمه‌کاره می‌ماند. هفت سال بعد، میرزا برای یافتن خواهرزادهٔ ربوده‌شده‌اش به حلب می‌رود و آنجا دوباره با لیلا و دختر شش‌ساله‌اش، هوما، روبه‌رو می‌شود.","official":{"website":"https://www.showtv.com.tr/dizi/tanitim/sevdan-bir-ates/3087","episodes":"https://www.showtv.com.tr/dizi/tum_bolumler/sevdan-bir-ates/3087","youtube":"https://www.youtube.com/@showtv"},"cast":[{"name":"Murat Ünalmış","role":"Mirza Kozaklı","image":"https://im.showtv.com.tr/5/8233/murat-unalmis-500x500.png?v=1788170289"},{"name":"Özge Özacar","role":"Leyla Kızılırmak","image":"https://im.showtv.com.tr/5/8234/ozge-ozacar-500x500.png?v=1788192470"},{"name":"Gökçe Eyüboğlu","role":"Mihre Kozaklı","image":"https://im.showtv.com.tr/5/8235/gokce-eyuboglu-500x500.png?v=1788176554"},{"name":"Sitare Akbaş","role":"Destan Kızılırmak","image":""},{"name":"Taner Rumeli","role":"Yaman","image":""},{"name":"Sezin Bozacı","role":"Macide","image":""}],"seasons":[{"number":1,"label":"فصل اول","episodes":[{"number":1,"date":"2026-09-09","title":"انتخاب در ایستگاه قطار","image":"https://mo.ciner.com.tr/video/2026/09/10/ver1789146181/0871ED094D1733AB93679DA472CBB1C1_630x314.jpg","summary":"میرزا برای یافتن کرم به حلب می‌رود و بی‌خبر از واقعیت، دوباره به مسیر زندگی لیلا وارد می‌شود. لیلا که سال‌ها در اسارت نسیم مانده، با بی‌هوش‌کردن او و مادرش همراه کرم و هوما فرار می‌کند. در ایستگاه قطار، لیلا میان رسیدن به میرزا و رها نکردن دخترش مجبور به انتخاب می‌شود؛ اما میرزا بازمی‌گردد و رویارویی هفت‌سال‌به‌تعویق‌افتاده سرانجام رخ می‌دهد.","source":"https://www.showtv.com.tr/dizi/tum_bolumler/sevdan-bir-ates-sezon-1-bolum-1-izle/134755"},{"number":2,"date":"2026-09-16","title":"بازگشت به خانه","image":"https://mo.ciner.com.tr/video/2026/09/16/ver1789594342/EB8BA9C9EFD4B12995DA6ECE506F98E0_630x314.jpg","summary":"میرزا نمی‌تواند لیلا و هوما را در ایستگاه رها کند و آن‌ها را با خود می‌برد. حضور دوبارهٔ لیلا، عشق و خشم هفت‌سالهٔ میرزا را هم‌زمان زنده می‌کند، در حالی که او هنوز هوما را دختر نسیم می‌داند. لیلا برای عبور از مرز عجله دارد و پلیس نیز به‌دلیل اتفاقات حلب در تعقیب اوست؛ اما قول می‌دهد پس از بازگشت به ترکیه حقیقت را برای میرزا تعریف کند.","source":"https://www.showtv.com.tr/dizi/tum_bolumler/sevdan-bir-ates-sezon-1-bolum-2-izle/134865"}]}]}}
+{
+  "sevdan-bir-ates": {
+    "slug": "sevdan-bir-ates",
+    "titleFa": "سِودان بیر آتش",
+    "titleTr": "Sevdan Bir Ateş",
+    "ratingKey": "SEVDAN BIR ATES",
+    "network": "show-tv",
+    "studio": "CNP Film",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "چهارشنبه",
+    "dayIndex": 2,
+    "airing": "چهارشنبه‌ها ساعت ۲۰:۰۰",
+    "genre": ["درام", "عاشقانه", "خانوادگی"],
+    "hero": "https://mo.ciner.com.tr/showtv/iu/1920x1080_5/sevdan-bir-ates.jpg?v=1789590446",
+    "fragman": "https://www.youtube.com/@showtv",
+    "synopsis": "مراسم ازدواج میرزا و لیلا چند ساعت مانده به عقد، با ناپدیدشدن لیلا نیمه‌کاره می‌ماند. هفت سال بعد، میرزا برای یافتن خواهرزادهٔ ربوده‌شده‌اش به حلب می‌رود و آنجا دوباره با لیلا و دختر شش‌ساله‌اش، هوما، روبه‌رو می‌شود.",
+    "official": {
+      "website": "https://www.showtv.com.tr/dizi/tanitim/sevdan-bir-ates/3087",
+      "episodes": "https://www.showtv.com.tr/dizi/tum_bolumler/sevdan-bir-ates/3087",
+      "youtube": "https://www.youtube.com/@showtv"
+    },
+    "cast": [
+      { "name": "Murat Ünalmış", "role": "Mirza Kozaklı", "image": "https://im.showtv.com.tr/5/8233/murat-unalmis-500x500.png?v=1788170289" },
+      { "name": "Özge Özacar", "role": "Leyla Kızılırmak", "image": "https://im.showtv.com.tr/5/8234/ozge-ozacar-500x500.png?v=1788192470" },
+      { "name": "Gökçe Eyüboğlu", "role": "Mihre Kozaklı", "image": "https://im.showtv.com.tr/5/8235/gokce-eyuboglu-500x500.png?v=1788176554" },
+      { "name": "Sitare Akbaş", "role": "Destan Kızılırmak", "image": "" },
+      { "name": "Taner Rumeli", "role": "Yaman", "image": "" },
+      { "name": "Sezin Bozacı", "role": "Macide", "image": "" }
+    ],
+    "seasons": [
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2026-09-09",
+            "title": "انتخاب در ایستگاه قطار",
+            "image": "https://mo.ciner.com.tr/video/2026/09/10/ver1789146181/0871ED094D1733AB93679DA472CBB1C1_630x314.jpg",
+            "images": [
+              "https://mo.ciner.com.tr/video/2026/09/10/ver1789146181/0871ED094D1733AB93679DA472CBB1C1_630x314.jpg"
+            ],
+            "fragman": "https://www.showtv.com.tr/dizi/tanitim/sevdan-bir-ates/3087",
+            "summary": "میرزا برای یافتن کرم به حلب می‌رود و بی‌خبر از واقعیت، دوباره به مسیر زندگی لیلا وارد می‌شود. لیلا که سال‌ها در اسارت نسیم مانده، با بی‌هوش‌کردن او و مادرش همراه کرم و هوما فرار می‌کند. در ایستگاه قطار، لیلا میان رسیدن به میرزا و رها نکردن دخترش مجبور به انتخاب می‌شود؛ اما میرزا بازمی‌گردد و رویارویی هفت‌سال‌به‌تعویق‌افتاده سرانجام رخ می‌دهد.",
+            "source": "https://www.showtv.com.tr/dizi/tum_bolumler/sevdan-bir-ates-sezon-1-bolum-1-izle/134755"
+          },
+          {
+            "number": 2,
+            "date": "2026-09-16",
+            "title": "بازگشت به خانه",
+            "image": "https://mo.ciner.com.tr/video/2026/09/16/ver1789594342/EB8BA9C9EFD4B12995DA6ECE506F98E0_630x314.jpg",
+            "images": [
+              "https://mo.ciner.com.tr/video/2026/09/16/ver1789594342/EB8BA9C9EFD4B12995DA6ECE506F98E0_630x314.jpg"
+            ],
+            "fragman": "https://www.showtv.com.tr/dizi/tanitim/sevdan-bir-ates/3087",
+            "summary": "میرزا نمی‌تواند لیلا و هوما را در ایستگاه رها کند و آن‌ها را با خود می‌برد. حضور دوبارهٔ لیلا، عشق و خشم هفت‌سالهٔ میرزا را هم‌زمان زنده می‌کند، در حالی که او هنوز هوما را دختر نسیم می‌داند. لیلا برای عبور از مرز عجله دارد و پلیس نیز به‌دلیل اتفاقات حلب در تعقیب اوست؛ اما قول می‌دهد پس از بازگشت به ترکیه حقیقت را برای میرزا تعریف کند.",
+            "source": "https://www.showtv.com.tr/dizi/tum_bolumler/sevdan-bir-ates-sezon-1-bolum-2-izle/134865"
+          }
+        ]
+      }
+    ]
+  },
+  "ask-ve-taht": {
+    "slug": "ask-ve-taht",
+    "titleFa": "عشق و تخت",
+    "titleTr": "Aşk ve Taht",
+    "ratingKey": "ASK VE TAHT",
+    "network": "atv",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "چهارشنبه",
+    "dayIndex": 2,
+    "airing": "چهارشنبه‌ها",
+    "genre": ["درام", "تاریخی"],
+    "hero": "",
+    "fragman": "https://www.atv.com.tr/ask-ve-taht/fragman",
+    "synopsis": "",
+    "official": {
+      "website": "https://www.atv.com.tr/ask-ve-taht",
+      "episodes": "https://www.atv.com.tr/ask-ve-taht/bolumler",
+      "youtube": "https://www.youtube.com/@atv"
+    },
+    "cast": [],
+    "seasons": [
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          { "number": 1, "date": "2026-09-09", "title": "", "image": "https://iatv.tmgrup.com.tr/2026/08/31/1788199571117.jpg", "images": ["https://iatv.tmgrup.com.tr/2026/08/31/1788199571117.jpg"], "fragman": "https://www.atv.com.tr/ask-ve-taht/fragman", "summary": "", "source": "https://www.atv.com.tr/ask-ve-taht/bolumler" },
+          { "number": 2, "date": "2026-09-16", "title": "", "image": "", "images": [], "fragman": "https://www.atv.com.tr/ask-ve-taht/fragman", "summary": "", "source": "https://www.atv.com.tr/ask-ve-taht/bolumler" }
+        ]
+      }
+    ]
+  },
+  "abi": {
+    "slug": "abi",
+    "titleFa": "آ.ب.ای (A.B.İ.)",
+    "titleTr": "A.B.İ.",
+    "ratingKey": "A.B.I.",
+    "network": "atv",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "سه‌شنبه",
+    "dayIndex": 1,
+    "airing": "سه‌شنبه‌ها",
+    "genre": ["درام"],
+    "hero": "",
+    "fragman": "https://www.atv.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.atv.com.tr/abi", "episodes": "https://www.atv.com.tr/abi/bolumler", "youtube": "https://www.youtube.com/@atv" },
+    "cast": [],
+    "seasons": [
+      { "number": 1, "label": "فصل اول", "episodes": [
+        { "number": 1, "date": "2026-09-08", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/abi/bolumler" },
+        { "number": 2, "date": "2026-09-15", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/abi/bolumler" }
+      ] }
+    ]
+  },
+  "gunesin-dogdugu-yer": {
+    "slug": "gunesin-dogdugu-yer",
+    "titleFa": "جایی که خورشید طلوع می‌کند",
+    "titleTr": "Güneşin Doğduğu Yer",
+    "ratingKey": "GUNESIN DOGDUGU YER",
+    "network": "atv",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "پنجشنبه",
+    "dayIndex": 3,
+    "airing": "پنجشنبه‌ها",
+    "genre": ["درام"],
+    "hero": "",
+    "fragman": "https://www.atv.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.atv.com.tr/gunesin-dogdugu-yer", "episodes": "https://www.atv.com.tr/gunesin-dogdugu-yer/bolumler", "youtube": "https://www.youtube.com/@atv" },
+    "cast": [],
+    "seasons": [
+      { "number": 1, "label": "فصل اول", "episodes": [
+        { "number": 1, "date": "2026-09-17", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/gunesin-dogdugu-yer/bolumler" }
+      ] }
+    ]
+  },
+  "mercan-kosk": {
+    "slug": "mercan-kosk",
+    "titleFa": "کوشک مرجان",
+    "titleTr": "Mercan Köşk",
+    "ratingKey": "MERCAN KOSK",
+    "network": "atv",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "شنبه",
+    "dayIndex": 5,
+    "airing": "شنبه‌ها",
+    "genre": ["درام"],
+    "hero": "",
+    "fragman": "https://www.atv.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.atv.com.tr/mercan-kosk", "episodes": "https://www.atv.com.tr/mercan-kosk/bolumler", "youtube": "https://www.youtube.com/@atv" },
+    "cast": [],
+    "seasons": [
+      { "number": 1, "label": "فصل اول", "episodes": [
+        { "number": 1, "date": "2026-09-05", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/mercan-kosk/bolumler" },
+        { "number": 2, "date": "2026-09-12", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/mercan-kosk/bolumler" }
+      ] }
+    ]
+  },
+  "uzak-sehir": {
+    "slug": "uzak-sehir",
+    "titleFa": "شهر دور",
+    "titleTr": "Uzak Şehir",
+    "ratingKey": "UZAK SEHIR",
+    "network": "kanal-d",
+    "studio": "",
+    "year": 2024,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "دوشنبه",
+    "dayIndex": 0,
+    "airing": "دوشنبه‌ها",
+    "genre": ["درام", "عاشقانه"],
+    "hero": "",
+    "fragman": "https://www.kanald.com.tr/uzak-sehir",
+    "synopsis": "",
+    "official": { "website": "https://www.kanald.com.tr/uzak-sehir", "episodes": "https://www.kanald.com.tr/uzak-sehir/bolumler", "youtube": "https://www.youtube.com/@KanalD" },
+    "cast": [],
+    "seasons": [ { "number": 2, "label": "فصل جدید", "episodes": [] } ]
+  },
+  "haysiyet": {
+    "slug": "haysiyet",
+    "titleFa": "حیثیت",
+    "titleTr": "Haysiyet",
+    "ratingKey": "HAYSIYET",
+    "network": "kanal-d",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "سه‌شنبه",
+    "dayIndex": 1,
+    "airing": "سه‌شنبه‌ها",
+    "genre": ["درام"],
+    "hero": "",
+    "fragman": "https://www.kanald.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.kanald.com.tr/haysiyet", "episodes": "https://www.kanald.com.tr/haysiyet/bolumler", "youtube": "https://www.youtube.com/@KanalD" },
+    "cast": [],
+    "seasons": [
+      { "number": 1, "label": "فصل اول", "episodes": [
+        { "number": 1, "date": "2026-09-08", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.kanald.com.tr/haysiyet/bolumler" },
+        { "number": 2, "date": "2026-09-15", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.kanald.com.tr/haysiyet/bolumler" }
+      ] }
+    ]
+  },
+  "guller-ve-gunahlar": {
+    "slug": "guller-ve-gunahlar",
+    "titleFa": "گل‌ها و گناهان",
+    "titleTr": "Güller ve Günahlar",
+    "ratingKey": "GULLER VE GUNAHLAR",
+    "network": "kanal-d",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "شنبه",
+    "dayIndex": 5,
+    "airing": "شنبه‌ها",
+    "genre": ["درام"],
+    "hero": "",
+    "fragman": "https://www.kanald.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.kanald.com.tr/guller-ve-gunahlar", "episodes": "https://www.kanald.com.tr/guller-ve-gunahlar/bolumler", "youtube": "https://www.youtube.com/@KanalD" },
+    "cast": [],
+    "seasons": [
+      { "number": 1, "label": "فصل اول", "episodes": [
+        { "number": 1, "date": "2026-09-12", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.kanald.com.tr/guller-ve-gunahlar/bolumler" }
+      ] }
+    ]
+  },
+  "kizilcik-serbeti": {
+    "slug": "kizilcik-serbeti",
+    "titleFa": "شربت زغال‌اخته",
+    "titleTr": "Kızılcık Şerbeti",
+    "ratingKey": "KIZILCIK SERBETI",
+    "network": "show-tv",
+    "studio": "",
+    "year": 2022,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "جمعه",
+    "dayIndex": 4,
+    "airing": "جمعه‌ها",
+    "genre": ["درام", "خانوادگی", "اجتماعی"],
+    "hero": "",
+    "fragman": "https://www.showtv.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.showtv.com.tr/dizi/tanitim/kizilcik-serbeti", "episodes": "https://www.showtv.com.tr/", "youtube": "https://www.youtube.com/@showtv" },
+    "cast": [],
+    "seasons": [ { "number": 4, "label": "فصل جدید", "episodes": [] } ]
+  },
+  "tuzlu-kahve": {
+    "slug": "tuzlu-kahve",
+    "titleFa": "قهوهٔ شور",
+    "titleTr": "Tuzlu Kahve",
+    "ratingKey": "TUZLU KAHVE",
+    "network": "star-tv",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "سه‌شنبه",
+    "dayIndex": 1,
+    "airing": "سه‌شنبه‌ها",
+    "genre": ["درام", "عاشقانه"],
+    "hero": "",
+    "fragman": "https://www.startv.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.startv.com.tr/dizi/tuzlu-kahve", "episodes": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler", "youtube": "https://www.youtube.com/@startv" },
+    "cast": [],
+    "seasons": [
+      { "number": 1, "label": "فصل اول", "episodes": [
+        { "number": 1, "date": "2026-09-01", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler" },
+        { "number": 2, "date": "2026-09-08", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler" },
+        { "number": 3, "date": "2026-09-15", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler" }
+      ] }
+    ]
+  },
+  "sevdigim-sensin": {
+    "slug": "sevdigim-sensin",
+    "titleFa": "تو همانی که دوستش دارم",
+    "titleTr": "Sevdiğim Sensin",
+    "ratingKey": "SEVDIGIM SENSIN",
+    "network": "star-tv",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "پنجشنبه",
+    "dayIndex": 3,
+    "airing": "پنجشنبه‌ها",
+    "genre": ["درام", "عاشقانه"],
+    "hero": "",
+    "fragman": "https://www.startv.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.startv.com.tr/dizi/sevdigim-sensin", "episodes": "https://www.startv.com.tr/dizi/sevdigim-sensin/bolumler", "youtube": "https://www.youtube.com/@startv" },
+    "cast": [],
+    "seasons": [
+      { "number": 1, "label": "فصل اول", "episodes": [
+        { "number": 1, "date": "2026-09-17", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.startv.com.tr/dizi/sevdigim-sensin/bolumler" }
+      ] }
+    ]
+  },
+  "gonul-dagi": {
+    "slug": "gonul-dagi",
+    "titleFa": "کوه دل",
+    "titleTr": "Gönül Dağı",
+    "ratingKey": "GONUL DAGI",
+    "network": "trt-1",
+    "studio": "",
+    "year": 2020,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "شنبه",
+    "dayIndex": 5,
+    "airing": "شنبه‌ها",
+    "genre": ["درام", "خانوادگی"],
+    "hero": "",
+    "fragman": "https://www.trt1.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.trt1.com.tr/diziler/gonul-dagi", "episodes": "https://www.trt1.com.tr/diziler/gonul-dagi/bolumler", "youtube": "https://www.youtube.com/@trt1" },
+    "cast": [],
+    "seasons": [ { "number": 6, "label": "فصل جدید", "episodes": [] } ]
+  },
+  "evlilik-guzeldir": {
+    "slug": "evlilik-guzeldir",
+    "titleFa": "ازدواج زیباست",
+    "titleTr": "Evlilik Güzeldir",
+    "ratingKey": "EVLILIK GUZELDIR",
+    "network": "trt-1",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "دوشنبه",
+    "dayIndex": 0,
+    "airing": "دوشنبه‌ها",
+    "genre": ["کمدی", "درام"],
+    "hero": "",
+    "fragman": "https://www.trt1.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.trt1.com.tr/diziler/evlilik-guzeldir", "episodes": "https://www.trt1.com.tr/diziler/evlilik-guzeldir/bolumler", "youtube": "https://www.youtube.com/@trt1" },
+    "cast": [],
+    "seasons": [
+      { "number": 1, "label": "فصل اول", "episodes": [
+        { "number": 1, "date": "2026-09-07", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.trt1.com.tr/diziler/evlilik-guzeldir/bolumler" },
+        { "number": 2, "date": "2026-09-14", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.trt1.com.tr/diziler/evlilik-guzeldir/bolumler" }
+      ] }
+    ]
+  },
+  "anne-yarisi": {
+    "slug": "anne-yarisi",
+    "titleFa": "نیمهٔ مادر",
+    "titleTr": "Anne Yarısı",
+    "ratingKey": "ANNE YARISI",
+    "network": "now",
+    "studio": "",
+    "year": 2026,
+    "status": "به‌زودی",
+    "kind": "series",
+    "day": "پنجشنبه",
+    "dayIndex": 3,
+    "airing": "پنجشنبه‌ها (از ۲۴ سپتامبر)",
+    "genre": ["درام"],
+    "hero": "",
+    "fragman": "https://www.nowtv.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.nowtv.com.tr/anne-yarisi", "episodes": "https://www.nowtv.com.tr/anne-yarisi/bolumler", "youtube": "https://www.youtube.com/@nowtv" },
+    "cast": [],
+    "seasons": [ { "number": 1, "label": "فصل اول", "episodes": [] } ]
+  },
+  "omur-usta": {
+    "slug": "omur-usta",
+    "titleFa": "اوستا عمور",
+    "titleTr": "Ömür Usta",
+    "ratingKey": "OMUR USTA",
+    "network": "now",
+    "studio": "",
+    "year": 2026,
+    "status": "به‌زودی",
+    "kind": "series",
+    "day": "یکشنبه",
+    "dayIndex": 6,
+    "airing": "یکشنبه‌ها (از ۲۰ سپتامبر)",
+    "genre": ["درام"],
+    "hero": "",
+    "fragman": "https://www.nowtv.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.nowtv.com.tr/omur-usta", "episodes": "https://www.nowtv.com.tr/omur-usta/bolumler", "youtube": "https://www.youtube.com/@nowtv" },
+    "cast": [],
+    "seasons": [ { "number": 1, "label": "فصل اول", "episodes": [] } ]
+  },
+  "masterchef-turkiye": {
+    "slug": "masterchef-turkiye",
+    "titleFa": "مسترشف ترکیه",
+    "titleTr": "MasterChef Türkiye",
+    "ratingKey": "MASTERCHEF TURKIYE",
+    "network": "tv8",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "entertainment",
+    "day": "هر شب",
+    "dayIndex": 7,
+    "airing": "بیشتر شب‌های هفته",
+    "genre": ["مسابقه", "آشپزی"],
+    "hero": "",
+    "fragman": "https://www.tv8.com.tr/",
+    "synopsis": "",
+    "official": { "website": "https://www.tv8.com.tr/masterchef-turkiye", "episodes": "https://www.tv8.com.tr/masterchef-turkiye/bolumler", "youtube": "https://www.youtube.com/@tv8" },
+    "cast": [],
+    "seasons": [ { "number": 1, "label": "فصل جاری", "episodes": [] } ]
+  }
+}

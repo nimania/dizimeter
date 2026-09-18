@@ -6,6 +6,7 @@ on:
     paths:
       - "github-pages/**"
       - "automation/build-pages-data.mjs"
+      - "automation/build-site.mjs"
       - ".github/workflows/pages.yml"
   schedule:
     - cron: "17 */2 * * *"
@@ -33,6 +34,9 @@ jobs:
           node-version: 22
       - name: Refresh official ratings
         run: node automation/build-pages-data.mjs
+        continue-on-error: true
+      - name: Regenerate static pages from data
+        run: node automation/build-site.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
