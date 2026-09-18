@@ -2,6 +2,20 @@
 
 A Persian-first, automation-first reference for Turkish TV series: schedules, episode recaps, daily ratings, and renewal/cancellation signals.
 
+**Live site:** https://nimania.github.io/meshkimedia/ · **License:** [MIT](./LICENSE)
+
+## Documentation
+
+Full, open documentation lives in [`docs/`](./docs):
+
+- [Overview](./docs/OVERVIEW.md) — what this is and where to start
+- [Architecture](./docs/ARCHITECTURE.md) — how the static site is built, page types, URLs, deploy
+- [Data model](./docs/DATA-MODEL.md) — JSON schemas, rating categories, how to add a series
+- [Contributing](./docs/CONTRIBUTING.md) — run locally and regenerate pages
+- [History & changelog](./docs/HISTORY.md)
+- [Sources](./docs/SOURCES.md) · [Automation](./docs/AUTOMATION.md)
+- [راهنمای فارسی](./docs/راهنما-fa.md) — Persian guide
+
 ## Product principles
 
 - No routine manual publishing: collectors discover changes, preserve source snapshots, normalize records, and publish only after quality gates pass.

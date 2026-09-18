@@ -10,8 +10,8 @@
 
 ## Rating caveat
 
-TİAK says its detailed measurement results are contract-protected commercial data. Its public website exposes daily top-10 programs plus monthly and annual tables. DiziMeter must not imply access to non-public TİAK data. Values outside the public tables need a separately licensed source or clear secondary-source attribution.
+TİAK says its detailed measurement results are contract-protected commercial data. Its public website exposes daily top-10 programs plus monthly and annual tables. Meshki Media must not imply access to non-public TİAK data. Values outside the public tables need a separately licensed source or clear secondary-source attribution.
 
 ## Copyright boundary
 
-DiziMeter stores factual metadata, short attributed excerpts when necessary, source hashes, and original Persian analysis. It does not republish full recaps, subtitles, images, or articles from Dizilah or broadcasters.
+Meshki Media stores factual metadata, short attributed excerpts when necessary, source hashes, and original Persian analysis. It does not republish full recaps, subtitles, images, or articles from Dizilah or broadcasters.
