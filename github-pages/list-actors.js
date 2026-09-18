@@ -10,10 +10,11 @@
     const people = Object.values(D.buildPeople(series)).sort((a, b) => a.name.localeCompare(b.name));
     if (!people.length) { el.innerHTML = `<div class="notice">هنوز بازیگری ثبت نشده است.</div>`; return; }
     el.innerHTML = people.map((pr) => {
-      const roles = pr.credits.map((c) => c.character).filter(Boolean).slice(0, 2).join("، ");
-      return `<a class="person-card" href="${root}oyuncu/${pr.slug}/" data-k="${D.esc(pr.name.toLowerCase())}">
-        <div class="person-thumb ${pr.photo ? "" : "no-image"}" ${pr.photo ? `style="background-image:url('${pr.photo}')"` : ""}>${pr.photo ? "" : D.esc(pr.name.slice(0, 1))}</div>
-        <strong dir="ltr">${D.esc(pr.name)}</strong><span>${D.esc(roles || (D.fmtInt(pr.credits.length) + " نقش"))}</span></a>`;
+      const disp = pr.nameFa || pr.name;
+      const roles = pr.credits.map((c) => c.characterFa || c.character).filter(Boolean).slice(0, 2).join("، ");
+      return `<a class="person-card" href="${root}oyuncu/${pr.slug}/" data-k="${D.esc((pr.name + " " + (pr.nameFa || "")).toLowerCase())}">
+        <div class="person-thumb ${pr.photo ? "" : "no-image"}" ${pr.photo ? `style="background-image:url('${pr.photo}')"` : ""}>${pr.photo ? "" : D.esc(disp.slice(0, 1))}</div>
+        <strong>${D.esc(disp)}</strong><span>${D.esc(roles || (D.fmtInt(pr.credits.length) + " نقش"))}</span></a>`;
     }).join("");
     if (q) q.addEventListener("input", () => { const v = q.value.trim().toLowerCase(); el.querySelectorAll(".person-card").forEach((c) => { c.style.display = !v || c.dataset.k.includes(v) ? "" : "none"; }); });
   } catch (e) { console.error(e); el.innerHTML = `<div class="notice error">فهرست بازیگران در دسترس نیست.</div>`; }

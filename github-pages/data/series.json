@@ -28,32 +28,44 @@
     "cast": [
       {
         "name": "Murat Ünalmış",
+        "nameFa": "مورات اونالمیش",
         "role": "Mirza Kozaklı",
+        "roleFa": "میرزا کوزاکلی",
         "image": "https://im.showtv.com.tr/5/8233/murat-unalmis-500x500.png?v=1788170289"
       },
       {
         "name": "Özge Özacar",
+        "nameFa": "اوزگه اوزآجار",
         "role": "Leyla Kızılırmak",
+        "roleFa": "لیلا کیزیل‌ایرماک",
         "image": "https://im.showtv.com.tr/5/8234/ozge-ozacar-500x500.png?v=1788192470"
       },
       {
         "name": "Gökçe Eyüboğlu",
+        "nameFa": "گؤکچه ایوب‌اوغلو",
         "role": "Mihre Kozaklı",
+        "roleFa": "میهره کوزاکلی",
         "image": "https://im.showtv.com.tr/5/8235/gokce-eyuboglu-500x500.png?v=1788176554"
       },
       {
         "name": "Sitare Akbaş",
+        "nameFa": "سیتاره آکباش",
         "role": "Destan Kızılırmak",
+        "roleFa": "دستان کیزیل‌ایرماک",
         "image": ""
       },
       {
         "name": "Taner Rumeli",
+        "nameFa": "تانر رومه‌لی",
         "role": "Yaman",
+        "roleFa": "یامان",
         "image": ""
       },
       {
         "name": "Sezin Bozacı",
+        "nameFa": "سزین بوزاجی",
         "role": "Macide",
+        "roleFa": "ماجیده",
         "image": ""
       }
     ],
@@ -323,32 +335,44 @@
     "cast": [
       {
         "name": "Ozan Akbaba",
+        "nameFa": "اوزان آکبابا",
         "role": "Cihan Albora",
+        "roleFa": "جیهان آلبورا",
         "image": ""
       },
       {
         "name": "Sinem Ünsal",
+        "nameFa": "سینم اونسال",
         "role": "Alya Smith Albora",
+        "roleFa": "آلیا اسمیت آلبورا",
         "image": ""
       },
       {
         "name": "Müfit Kayacan",
+        "nameFa": "مؤفیت کایاجان",
         "role": "Ecmel Albora",
+        "roleFa": "اجمل آلبورا",
         "image": ""
       },
       {
         "name": "Ferit Kaya",
+        "nameFa": "فریت کایا",
         "role": "Demir Baybars",
+        "roleFa": "دمیر بای‌بارس",
         "image": ""
       },
       {
         "name": "Kuzey Gezer",
+        "nameFa": "کوزی گزر",
         "role": "Deniz Cihan Albora",
+        "roleFa": "دنیز جیهان آلبورا",
         "image": ""
       },
       {
         "name": "Atakan Özkaya",
+        "nameFa": "آتاکان اوزکایا",
         "role": "Kaya Albora",
+        "roleFa": "کایا آلبورا",
         "image": ""
       }
     ],
@@ -780,6 +804,74 @@
       {
         "number": 1,
         "label": "فصل جاری",
+        "episodes": []
+      }
+    ]
+  },
+  "yeralti": {
+    "slug": "yeralti",
+    "titleFa": "زیرزمین",
+    "titleTr": "Yeraltı",
+    "ratingKey": "YERALTI",
+    "network": "now",
+    "studio": "",
+    "year": 2025,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "",
+    "dayIndex": null,
+    "airing": "",
+    "genre": [
+      "درام",
+      "جنایی"
+    ],
+    "hero": "",
+    "fragman": "https://www.nowtv.com.tr/",
+    "synopsis": "«زیرزمین» درامی جنایی از شبکهٔ NOW است که در دنیای زیرزمینی و مافیایی استانبول جریان دارد.",
+    "official": {
+      "website": "https://www.nowtv.com.tr/yeralti",
+      "episodes": "https://www.nowtv.com.tr/yeralti/bolumler",
+      "youtube": "https://www.youtube.com/@nowtv"
+    },
+    "cast": [],
+    "seasons": [
+      {
+        "number": 2,
+        "label": "فصل جدید",
+        "episodes": []
+      }
+    ]
+  },
+  "sevdam-karadeniz": {
+    "slug": "sevdam-karadeniz",
+    "titleFa": "سِودام قره‌دنیز",
+    "titleTr": "Sevdam Karadeniz",
+    "ratingKey": "SEVDAM KARADENIZ",
+    "network": "now",
+    "studio": "",
+    "year": 2026,
+    "status": "در حال پخش",
+    "kind": "series",
+    "day": "",
+    "dayIndex": null,
+    "airing": "",
+    "genre": [
+      "درام",
+      "عاشقانه"
+    ],
+    "hero": "",
+    "fragman": "https://www.nowtv.com.tr/",
+    "synopsis": "«سِودام قره‌دنیز» درامی عاشقانه از شبکهٔ NOW با حال‌وهوای منطقهٔ دریای سیاه (قره‌دنیز) ترکیه است.",
+    "official": {
+      "website": "https://www.nowtv.com.tr/sevdam-karadeniz",
+      "episodes": "https://www.nowtv.com.tr/sevdam-karadeniz/bolumler",
+      "youtube": "https://www.youtube.com/@nowtv"
+    },
+    "cast": [],
+    "seasons": [
+      {
+        "number": 1,
+        "label": "فصل اول",
         "episodes": []
       }
     ]

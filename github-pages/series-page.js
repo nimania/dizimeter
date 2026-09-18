@@ -32,7 +32,9 @@
         const actorUrl = c.name ? `${root}oyuncu/${D.slugify(c.name)}/` : null;
         const charUrl = c.role ? `${root}karakter/${D.slugify(d.slug + "-" + c.role)}/` : null;
         const photo = c.image ? `style="background-image:url('${c.image}')"` : "";
-        const inner = `<div class="cast-photo" ${photo}>${c.image ? "" : (c.name || "?").slice(0, 1)}</div><div><strong>${D.esc(c.name)}</strong>${charUrl ? `<a class="role-link" href="${charUrl}">${D.esc(c.role)}</a>` : `<span>${D.esc(c.role || "")}</span>`}</div>`;
+        const aName = c.nameFa || c.name;
+        const cName = c.roleFa || c.role || "";
+        const inner = `<div class="cast-photo" ${photo}>${c.image ? "" : (aName || "?").slice(0, 1)}</div><div><strong>${D.esc(aName)}</strong>${charUrl ? `<a class="role-link" href="${charUrl}">${D.esc(cName)}</a>` : `<span>${D.esc(cName)}</span>`}</div>`;
         return actorUrl ? `<a class="cast-card" href="${actorUrl}">${inner}</a>` : `<article class="cast-card">${inner}</article>`;
       }).join("");
     } else { $("#cast-section").hidden = true; }

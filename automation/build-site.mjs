@@ -30,13 +30,14 @@ for (const s of seriesArr) {
   for (const c of s.cast || []) {
     if (c.name) {
       const slug = slugify(c.name);
-      const pr = (people[slug] = people[slug] || { slug, name: c.name, photo: "", credits: [] });
+      const pr = (people[slug] = people[slug] || { slug, name: c.name, nameFa: "", photo: "", credits: [] });
+      if (!pr.nameFa && c.nameFa) pr.nameFa = c.nameFa;
       if (!pr.photo && c.image) pr.photo = c.image;
-      pr.credits.push({ seriesSlug: s.slug, seriesTitleFa: s.titleFa, character: c.role || "" });
+      pr.credits.push({ seriesSlug: s.slug, seriesTitleFa: s.titleFa, character: c.role || "", characterFa: c.roleFa || "" });
     }
     if (c.role) {
       const slug = slugify(s.slug + "-" + c.role);
-      characters[slug] = { slug, name: c.role, seriesSlug: s.slug, seriesTitleFa: s.titleFa, personName: c.name || "", personSlug: c.name ? slugify(c.name) : "", image: c.image || "" };
+      characters[slug] = { slug, name: c.role, nameFa: c.roleFa || "", seriesSlug: s.slug, seriesTitleFa: s.titleFa, personName: c.name || "", personNameFa: c.nameFa || "", personSlug: c.name ? slugify(c.name) : "", image: c.image || "" };
     }
   }
 }
@@ -66,15 +67,15 @@ function head(root, { title, desc, path, ogImage, jsonld, ogType = "website" }) 
 <meta property="og:url" content="${canonical}"><meta property="og:image" content="${img}"><meta property="og:locale" content="fa_IR">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(desc)}"><meta name="twitter:image" content="${img}">
 <link rel="icon" href="${root}images/meshki-media-logo.png" type="image/png"><link rel="apple-touch-icon" href="${root}images/meshki-media-logo.png">
-<link rel="stylesheet" href="${root}styles.css?v=20260918c">${ld}
+<link rel="stylesheet" href="${root}styles.css?v=20260918d">${ld}
 </head>
 <body>
 <header class="app-header"><a class="brand" href="${root}"><img class="brand-logo" src="${root}images/meshki-media-logo.png" alt="مشکی مدیا" width="34" height="34"><span class="brand-text"><strong>مشکی مدیا</strong><span>هوش سریال ترکی</span></span></a><div class="header-actions"><button id="theme-toggle" class="icon-button" aria-label="روشن یا تیره">◐</button><a class="icon-button" href="${root}ara/" aria-label="جستجو">⌕</a></div></header>
 ${SITE_NAV(root, path.split("/")[0] === "" ? "" : (path.split("/").slice(0, 1)[0] + "/"))}`;
 }
 const boot = (root, obj, scripts) => `<script>window.DM=${JSON.stringify(Object.assign({ root }, obj))};</script>
-<script src="${root}dizimeter.js?v=20260918c" defer></script>
-${scripts.map((s) => `<script src="${root}${s}?v=20260918c" defer></script>`).join("\n")}
+<script src="${root}dizimeter.js?v=20260918d" defer></script>
+${scripts.map((s) => `<script src="${root}${s}?v=20260918d" defer></script>`).join("\n")}
 </body></html>
 `;
 const BOTTOM = (root, items) => `<nav class="bottom-nav">${items.map(([h, b, t, on]) => `<a href="${root}${h}"${on ? ' class="active"' : ""}><b>${b}</b><span>${t}</span></a>`).join("")}</nav>`;
@@ -160,12 +161,14 @@ function actorPage(pr) {
   const root = "../../";
   const jsonld = { "@context": "https://schema.org", "@type": "Person", name: pr.name, url: `${BASE}/oyuncu/${pr.slug}/` };
   if (pr.photo) jsonld.image = pr.photo;
-  const roles = pr.credits.map((c) => c.character).filter(Boolean).slice(0, 3).join("، ");
-  const h = head(root, { title: `${pr.name} — بازیگر | مشکی مدیا`, desc: `${pr.name}، بازیگر ترکیه‌ای${roles ? "؛ نقش‌ها: " + roles : ""}. سریال‌ها و کاراکترها در مشکی مدیا.`, path: `oyuncu/${pr.slug}/`, ogImage: pr.photo, ogType: "profile", jsonld });
+  if (pr.nameFa) jsonld.alternateName = pr.nameFa;
+  const disp = pr.nameFa || pr.name;
+  const roles = pr.credits.map((c) => c.characterFa || c.character).filter(Boolean).slice(0, 3).join("، ");
+  const h = head(root, { title: `${disp} — بازیگر | مشکی مدیا`, desc: `${disp} (${pr.name})، بازیگر ترکیه‌ای${roles ? "؛ نقش‌ها: " + roles : ""}. سریال‌ها و کاراکترها در مشکی مدیا.`, path: `oyuncu/${pr.slug}/`, ogImage: pr.photo, ogType: "profile", jsonld });
   const body = `
 <main class="profile-shell">
-<div class="crumbs"><a href="${root}">خانه</a><span>/</span><a href="${root}oyuncular/">بازیگران</a><span>/</span><span>${esc(pr.name)}</span></div>
-<section class="person-hero"><div class="person-photo ${pr.photo ? "" : "no-image"}" ${pr.photo ? `style="background-image:url('${esc(pr.photo)}')"` : ""}>${pr.photo ? "" : esc(pr.name.slice(0, 1))}</div><div><span class="kicker">بازیگر</span><h1>${esc(pr.name)}</h1><p class="muted-line">${esc(roles || "")}</p></div></section>
+<div class="crumbs"><a href="${root}">خانه</a><span>/</span><a href="${root}oyuncular/">بازیگران</a><span>/</span><span>${esc(disp)}</span></div>
+<section class="person-hero"><div class="person-photo ${pr.photo ? "" : "no-image"}" ${pr.photo ? `style="background-image:url('${esc(pr.photo)}')"` : ""}>${pr.photo ? "" : esc(disp.slice(0, 1))}</div><div><span class="kicker">بازیگر</span><h1>${esc(disp)}</h1><p class="muted-line" dir="ltr">${esc(pr.name)}</p><p class="muted-line">${esc(roles || "")}</p></div></section>
 <section class="profile-section"><div class="section-headline"><div><span>کارنامه</span><h2>سریال‌ها و کاراکترها</h2></div></div><div id="credits" class="credits-grid"></div></section>
 </main>
 ${BOTTOM(root, [["", "⌂", "خانه"], ["oyuncular/", "◉", "بازیگران", true], ["diziler/", "☰", "سریال‌ها"], ["ara/", "⌕", "جستجو"]])}`;
@@ -175,12 +178,14 @@ ${BOTTOM(root, [["", "⌂", "خانه"], ["oyuncular/", "◉", "بازیگران
 // ---- Character page --------------------------------------------------------
 function characterPage(ch) {
   const root = "../../";
+  const disp = ch.nameFa || ch.name;
   const jsonld = { "@context": "https://schema.org", "@type": "Person", name: ch.name, url: `${BASE}/karakter/${ch.slug}/`, description: `کاراکتر سریال ${ch.seriesTitleFa}` };
-  const h = head(root, { title: `${ch.name} — کاراکتر ${ch.seriesTitleFa} | مشکی مدیا`, desc: `${ch.name}، کاراکتر سریال ${ch.seriesTitleFa}${ch.personName ? "، با بازی " + ch.personName : ""}.`, path: `karakter/${ch.slug}/`, ogImage: ch.image, ogType: "profile", jsonld });
+  if (ch.nameFa) jsonld.alternateName = ch.nameFa;
+  const h = head(root, { title: `${disp} — کاراکتر ${ch.seriesTitleFa} | مشکی مدیا`, desc: `${disp}، کاراکتر سریال ${ch.seriesTitleFa}${ch.personNameFa || ch.personName ? "، با بازیِ " + (ch.personNameFa || ch.personName) : ""}.`, path: `karakter/${ch.slug}/`, ogImage: ch.image, ogType: "profile", jsonld });
   const body = `
 <main class="profile-shell">
-<div class="crumbs"><a href="${root}">خانه</a><span>/</span><a href="${root}karakterler/">کاراکترها</a><span>/</span><span>${esc(ch.name)}</span></div>
-<section class="person-hero"><div class="person-photo ${ch.image ? "" : "no-image"}" ${ch.image ? `style="background-image:url('${esc(ch.image)}')"` : ""}>${ch.image ? "" : esc(ch.name.slice(0, 1))}</div><div><span class="kicker">کاراکتر</span><h1>${esc(ch.name)}</h1><p class="muted-line" id="char-sub"></p></div></section>
+<div class="crumbs"><a href="${root}">خانه</a><span>/</span><a href="${root}karakterler/">کاراکترها</a><span>/</span><span>${esc(disp)}</span></div>
+<section class="person-hero"><div class="person-photo ${ch.image ? "" : "no-image"}" ${ch.image ? `style="background-image:url('${esc(ch.image)}')"` : ""}>${ch.image ? "" : esc(disp.slice(0, 1))}</div><div><span class="kicker">کاراکتر</span><h1>${esc(disp)}</h1><p class="muted-line" dir="ltr">${esc(ch.name)}</p><p class="muted-line" id="char-sub"></p></div></section>
 <section class="profile-section"><div id="char-info" class="char-info"></div></section>
 </main>
 ${BOTTOM(root, [["", "⌂", "خانه"], ["karakterler/", "◈", "کاراکترها", true], ["diziler/", "☰", "سریال‌ها"], ["ara/", "⌕", "جستجو"]])}`;
@@ -256,8 +261,8 @@ for (const l of lists) { await mkdir(p(l.path), { recursive: true }); await writ
 const searchIndex = [];
 for (const s of seriesArr) searchIndex.push({ t: "series", titleFa: s.titleFa, titleTr: s.titleTr, sub: (networks[s.network] || {}).name || "", url: `dizi/${s.slug}/` });
 for (const s of seriesArr) for (const se of s.seasons || []) for (const e of se.episodes || []) searchIndex.push({ t: "episode", titleFa: `${s.titleFa} — قسمت ${e.number}`, titleTr: e.title || "", sub: s.titleTr, url: `dizi/${s.slug}/bolum-${e.number}/` });
-for (const pr of Object.values(people)) searchIndex.push({ t: "actor", titleFa: pr.name, titleTr: pr.credits.map((c) => c.character).filter(Boolean).join("، "), sub: "بازیگر", url: `oyuncu/${pr.slug}/` });
-for (const ch of Object.values(characters)) searchIndex.push({ t: "character", titleFa: ch.name, titleTr: ch.personName, sub: ch.seriesTitleFa, url: `karakter/${ch.slug}/` });
+for (const pr of Object.values(people)) searchIndex.push({ t: "actor", titleFa: pr.nameFa || pr.name, titleTr: pr.name, sub: "بازیگر", url: `oyuncu/${pr.slug}/` });
+for (const ch of Object.values(characters)) searchIndex.push({ t: "character", titleFa: ch.nameFa || ch.name, titleTr: ch.name + (ch.personNameFa ? " · " + ch.personNameFa : ""), sub: ch.seriesTitleFa, url: `karakter/${ch.slug}/` });
 for (const net of Object.values(networks)) searchIndex.push({ t: "network", titleFa: net.name, titleTr: net.nameFa || "", sub: "شبکه", url: `kanal/${net.slug}/` });
 await writeFile(p("data/search-index.json"), JSON.stringify(searchIndex) + "\n", "utf8");
 

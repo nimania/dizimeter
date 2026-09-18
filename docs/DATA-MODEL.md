@@ -57,7 +57,7 @@ Map of `slug → series`. Episodes carry photos and the trailer (`fragman`).
     "fragman": "https://…",             // series trailer page (optional)
     "synopsis": "…",
     "official": { "website": "…", "episodes": "…", "youtube": "…" },
-    "cast": [{ "name": "…", "role": "…", "image": "…" }],
+    "cast": [{ "name": "Murat Ünalmış", "nameFa": "مورات اونالمیش", "role": "Mirza Kozaklı", "roleFa": "میرزا کوزاکلی", "image": "…" }],
     "seasons": [
       {
         "number": 1,

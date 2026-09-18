@@ -56,9 +56,10 @@
       (s.cast || []).forEach((c) => {
         if (!c.name) return;
         const slug = slugify(c.name);
-        const p = (people[slug] = people[slug] || { slug, name: c.name, photo: "", credits: [] });
+        const p = (people[slug] = people[slug] || { slug, name: c.name, nameFa: "", photo: "", credits: [] });
+        if (!p.nameFa && c.nameFa) p.nameFa = c.nameFa;
         if (!p.photo && c.image) p.photo = c.image;
-        p.credits.push({ seriesSlug: s.slug, seriesTitleFa: s.titleFa, seriesTitleTr: s.titleTr, character: c.role || "", charSlug: c.role ? slugify(s.slug + "-" + c.role) : "" });
+        p.credits.push({ seriesSlug: s.slug, seriesTitleFa: s.titleFa, seriesTitleTr: s.titleTr, character: c.role || "", characterFa: c.roleFa || "", charSlug: c.role ? slugify(s.slug + "-" + c.role) : "" });
       });
     });
     return people;
@@ -69,7 +70,7 @@
       (s.cast || []).forEach((c) => {
         if (!c.role) return;
         const slug = slugify(s.slug + "-" + c.role);
-        chars[slug] = { slug, name: c.role, seriesSlug: s.slug, seriesTitleFa: s.titleFa, seriesTitleTr: s.titleTr, personSlug: c.name ? slugify(c.name) : "", personName: c.name || "", image: c.image || "" };
+        chars[slug] = { slug, name: c.role, nameFa: c.roleFa || "", seriesSlug: s.slug, seriesTitleFa: s.titleFa, seriesTitleTr: s.titleTr, personSlug: c.name ? slugify(c.name) : "", personName: c.name || "", personNameFa: c.nameFa || "", image: c.image || "" };
       });
     });
     return chars;
