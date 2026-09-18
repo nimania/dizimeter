@@ -29,6 +29,18 @@ build step required to view it). It offers:
   navigation.
 - **Network pages** at `/kanal/<slug>/` plus a networks index at `/kanal/` — browse
   every series grouped by channel, each with a network mark (logo).
+- **Actor pages** at `/oyuncu/<slug>/` and **character pages** at `/karakter/<slug>/`,
+  linked from every series’ cast, with an actor’s full filmography.
+- **List pages:** all series `/diziler/`, actors `/oyuncular/`, characters
+  `/karakterler/`, a recap archive `/ozetler/`, and a trailer (fragman) archive
+  `/fragmanlar/` — each searchable.
+- **Broadcast calendar** at `/takvim/` — the weekly schedule with air times in
+  **Turkey**, **Iran**, and **US Pacific (Los Angeles)**, computed with correct DST.
+- **Site search** at `/ara/` (and a box on the home page) across series, episodes,
+  actors, characters, and networks.
+- **SEO built in:** per‑page titles, meta descriptions, canonical URLs, Open Graph /
+  Twitter cards, JSON‑LD structured data (`TVSeries`, `TVEpisode`, `Person`,
+  `Organization`), a generated `sitemap.xml`, and `robots.txt`.
 
 ## Honesty policy (important)
 

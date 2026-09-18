@@ -12,7 +12,11 @@
     "day": "چهارشنبه",
     "dayIndex": 2,
     "airing": "چهارشنبه‌ها ساعت ۲۰:۰۰",
-    "genre": ["درام", "عاشقانه", "خانوادگی"],
+    "genre": [
+      "درام",
+      "عاشقانه",
+      "خانوادگی"
+    ],
     "hero": "https://mo.ciner.com.tr/showtv/iu/1920x1080_5/sevdan-bir-ates.jpg?v=1789590446",
     "fragman": "https://www.youtube.com/@showtv",
     "synopsis": "مراسم ازدواج میرزا و لیلا چند ساعت مانده به عقد، با ناپدیدشدن لیلا نیمه‌کاره می‌ماند. هفت سال بعد، میرزا برای یافتن خواهرزادهٔ ربوده‌شده‌اش به حلب می‌رود و آنجا دوباره با لیلا و دختر شش‌ساله‌اش، هوما، روبه‌رو می‌شود.",
@@ -22,12 +26,36 @@
       "youtube": "https://www.youtube.com/@showtv"
     },
     "cast": [
-      { "name": "Murat Ünalmış", "role": "Mirza Kozaklı", "image": "https://im.showtv.com.tr/5/8233/murat-unalmis-500x500.png?v=1788170289" },
-      { "name": "Özge Özacar", "role": "Leyla Kızılırmak", "image": "https://im.showtv.com.tr/5/8234/ozge-ozacar-500x500.png?v=1788192470" },
-      { "name": "Gökçe Eyüboğlu", "role": "Mihre Kozaklı", "image": "https://im.showtv.com.tr/5/8235/gokce-eyuboglu-500x500.png?v=1788176554" },
-      { "name": "Sitare Akbaş", "role": "Destan Kızılırmak", "image": "" },
-      { "name": "Taner Rumeli", "role": "Yaman", "image": "" },
-      { "name": "Sezin Bozacı", "role": "Macide", "image": "" }
+      {
+        "name": "Murat Ünalmış",
+        "role": "Mirza Kozaklı",
+        "image": "https://im.showtv.com.tr/5/8233/murat-unalmis-500x500.png?v=1788170289"
+      },
+      {
+        "name": "Özge Özacar",
+        "role": "Leyla Kızılırmak",
+        "image": "https://im.showtv.com.tr/5/8234/ozge-ozacar-500x500.png?v=1788192470"
+      },
+      {
+        "name": "Gökçe Eyüboğlu",
+        "role": "Mihre Kozaklı",
+        "image": "https://im.showtv.com.tr/5/8235/gokce-eyuboglu-500x500.png?v=1788176554"
+      },
+      {
+        "name": "Sitare Akbaş",
+        "role": "Destan Kızılırmak",
+        "image": ""
+      },
+      {
+        "name": "Taner Rumeli",
+        "role": "Yaman",
+        "image": ""
+      },
+      {
+        "name": "Sezin Bozacı",
+        "role": "Macide",
+        "image": ""
+      }
     ],
     "seasons": [
       {
@@ -60,7 +88,8 @@
           }
         ]
       }
-    ]
+    ],
+    "time": "20:00"
   },
   "ask-ve-taht": {
     "slug": "ask-ve-taht",
@@ -75,7 +104,10 @@
     "day": "چهارشنبه",
     "dayIndex": 2,
     "airing": "چهارشنبه‌ها",
-    "genre": ["درام", "تاریخی"],
+    "genre": [
+      "درام",
+      "تاریخی"
+    ],
     "hero": "",
     "fragman": "https://www.atv.com.tr/ask-ve-taht/fragman",
     "synopsis": "",
@@ -90,8 +122,28 @@
         "number": 1,
         "label": "فصل اول",
         "episodes": [
-          { "number": 1, "date": "2026-09-09", "title": "", "image": "https://iatv.tmgrup.com.tr/2026/08/31/1788199571117.jpg", "images": ["https://iatv.tmgrup.com.tr/2026/08/31/1788199571117.jpg"], "fragman": "https://www.atv.com.tr/ask-ve-taht/fragman", "summary": "", "source": "https://www.atv.com.tr/ask-ve-taht/bolumler" },
-          { "number": 2, "date": "2026-09-16", "title": "", "image": "", "images": [], "fragman": "https://www.atv.com.tr/ask-ve-taht/fragman", "summary": "", "source": "https://www.atv.com.tr/ask-ve-taht/bolumler" }
+          {
+            "number": 1,
+            "date": "2026-09-09",
+            "title": "",
+            "image": "https://iatv.tmgrup.com.tr/2026/08/31/1788199571117.jpg",
+            "images": [
+              "https://iatv.tmgrup.com.tr/2026/08/31/1788199571117.jpg"
+            ],
+            "fragman": "https://www.atv.com.tr/ask-ve-taht/fragman",
+            "summary": "",
+            "source": "https://www.atv.com.tr/ask-ve-taht/bolumler"
+          },
+          {
+            "number": 2,
+            "date": "2026-09-16",
+            "title": "",
+            "image": "",
+            "images": [],
+            "fragman": "https://www.atv.com.tr/ask-ve-taht/fragman",
+            "summary": "",
+            "source": "https://www.atv.com.tr/ask-ve-taht/bolumler"
+          }
         ]
       }
     ]
@@ -109,17 +161,43 @@
     "day": "سه‌شنبه",
     "dayIndex": 1,
     "airing": "سه‌شنبه‌ها",
-    "genre": ["درام"],
+    "genre": [
+      "درام"
+    ],
     "hero": "",
     "fragman": "https://www.atv.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.atv.com.tr/abi", "episodes": "https://www.atv.com.tr/abi/bolumler", "youtube": "https://www.youtube.com/@atv" },
+    "official": {
+      "website": "https://www.atv.com.tr/abi",
+      "episodes": "https://www.atv.com.tr/abi/bolumler",
+      "youtube": "https://www.youtube.com/@atv"
+    },
     "cast": [],
     "seasons": [
-      { "number": 1, "label": "فصل اول", "episodes": [
-        { "number": 1, "date": "2026-09-08", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/abi/bolumler" },
-        { "number": 2, "date": "2026-09-15", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/abi/bolumler" }
-      ] }
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2026-09-08",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.atv.com.tr/abi/bolumler"
+          },
+          {
+            "number": 2,
+            "date": "2026-09-15",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.atv.com.tr/abi/bolumler"
+          }
+        ]
+      }
     ]
   },
   "gunesin-dogdugu-yer": {
@@ -135,16 +213,34 @@
     "day": "پنجشنبه",
     "dayIndex": 3,
     "airing": "پنجشنبه‌ها",
-    "genre": ["درام"],
+    "genre": [
+      "درام"
+    ],
     "hero": "",
     "fragman": "https://www.atv.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.atv.com.tr/gunesin-dogdugu-yer", "episodes": "https://www.atv.com.tr/gunesin-dogdugu-yer/bolumler", "youtube": "https://www.youtube.com/@atv" },
+    "official": {
+      "website": "https://www.atv.com.tr/gunesin-dogdugu-yer",
+      "episodes": "https://www.atv.com.tr/gunesin-dogdugu-yer/bolumler",
+      "youtube": "https://www.youtube.com/@atv"
+    },
     "cast": [],
     "seasons": [
-      { "number": 1, "label": "فصل اول", "episodes": [
-        { "number": 1, "date": "2026-09-17", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/gunesin-dogdugu-yer/bolumler" }
-      ] }
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2026-09-17",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.atv.com.tr/gunesin-dogdugu-yer/bolumler"
+          }
+        ]
+      }
     ]
   },
   "mercan-kosk": {
@@ -160,17 +256,43 @@
     "day": "شنبه",
     "dayIndex": 5,
     "airing": "شنبه‌ها",
-    "genre": ["درام"],
+    "genre": [
+      "درام"
+    ],
     "hero": "",
     "fragman": "https://www.atv.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.atv.com.tr/mercan-kosk", "episodes": "https://www.atv.com.tr/mercan-kosk/bolumler", "youtube": "https://www.youtube.com/@atv" },
+    "official": {
+      "website": "https://www.atv.com.tr/mercan-kosk",
+      "episodes": "https://www.atv.com.tr/mercan-kosk/bolumler",
+      "youtube": "https://www.youtube.com/@atv"
+    },
     "cast": [],
     "seasons": [
-      { "number": 1, "label": "فصل اول", "episodes": [
-        { "number": 1, "date": "2026-09-05", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/mercan-kosk/bolumler" },
-        { "number": 2, "date": "2026-09-12", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.atv.com.tr/mercan-kosk/bolumler" }
-      ] }
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2026-09-05",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.atv.com.tr/mercan-kosk/bolumler"
+          },
+          {
+            "number": 2,
+            "date": "2026-09-12",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.atv.com.tr/mercan-kosk/bolumler"
+          }
+        ]
+      }
     ]
   },
   "uzak-sehir": {
@@ -186,13 +308,58 @@
     "day": "دوشنبه",
     "dayIndex": 0,
     "airing": "دوشنبه‌ها",
-    "genre": ["درام", "عاشقانه"],
+    "genre": [
+      "درام",
+      "عاشقانه"
+    ],
     "hero": "",
     "fragman": "https://www.kanald.com.tr/uzak-sehir",
-    "synopsis": "",
-    "official": { "website": "https://www.kanald.com.tr/uzak-sehir", "episodes": "https://www.kanald.com.tr/uzak-sehir/bolumler", "youtube": "https://www.youtube.com/@KanalD" },
-    "cast": [],
-    "seasons": [ { "number": 2, "label": "فصل جدید", "episodes": [] } ]
+    "synopsis": "آلیا از کانادا همراه پسرش دنیز به ماردین بازمی‌گردد تا آرزوی همسر درگذشته‌اش برای بازگشت خانواده به وطن را برآورده کند؛ آنجا زندگی‌اش با خاندان آلبورا و جیهان گره می‌خورد.",
+    "official": {
+      "website": "https://www.kanald.com.tr/uzak-sehir",
+      "episodes": "https://www.kanald.com.tr/uzak-sehir/bolumler",
+      "youtube": "https://www.youtube.com/@KanalD"
+    },
+    "cast": [
+      {
+        "name": "Ozan Akbaba",
+        "role": "Cihan Albora",
+        "image": ""
+      },
+      {
+        "name": "Sinem Ünsal",
+        "role": "Alya Smith Albora",
+        "image": ""
+      },
+      {
+        "name": "Müfit Kayacan",
+        "role": "Ecmel Albora",
+        "image": ""
+      },
+      {
+        "name": "Ferit Kaya",
+        "role": "Demir Baybars",
+        "image": ""
+      },
+      {
+        "name": "Kuzey Gezer",
+        "role": "Deniz Cihan Albora",
+        "image": ""
+      },
+      {
+        "name": "Atakan Özkaya",
+        "role": "Kaya Albora",
+        "image": ""
+      }
+    ],
+    "seasons": [
+      {
+        "number": 2,
+        "label": "فصل جدید",
+        "episodes": []
+      }
+    ],
+    "time": "20:00"
   },
   "haysiyet": {
     "slug": "haysiyet",
@@ -207,17 +374,43 @@
     "day": "سه‌شنبه",
     "dayIndex": 1,
     "airing": "سه‌شنبه‌ها",
-    "genre": ["درام"],
+    "genre": [
+      "درام"
+    ],
     "hero": "",
     "fragman": "https://www.kanald.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.kanald.com.tr/haysiyet", "episodes": "https://www.kanald.com.tr/haysiyet/bolumler", "youtube": "https://www.youtube.com/@KanalD" },
+    "official": {
+      "website": "https://www.kanald.com.tr/haysiyet",
+      "episodes": "https://www.kanald.com.tr/haysiyet/bolumler",
+      "youtube": "https://www.youtube.com/@KanalD"
+    },
     "cast": [],
     "seasons": [
-      { "number": 1, "label": "فصل اول", "episodes": [
-        { "number": 1, "date": "2026-09-08", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.kanald.com.tr/haysiyet/bolumler" },
-        { "number": 2, "date": "2026-09-15", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.kanald.com.tr/haysiyet/bolumler" }
-      ] }
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2026-09-08",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.kanald.com.tr/haysiyet/bolumler"
+          },
+          {
+            "number": 2,
+            "date": "2026-09-15",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.kanald.com.tr/haysiyet/bolumler"
+          }
+        ]
+      }
     ]
   },
   "guller-ve-gunahlar": {
@@ -233,16 +426,34 @@
     "day": "شنبه",
     "dayIndex": 5,
     "airing": "شنبه‌ها",
-    "genre": ["درام"],
+    "genre": [
+      "درام"
+    ],
     "hero": "",
     "fragman": "https://www.kanald.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.kanald.com.tr/guller-ve-gunahlar", "episodes": "https://www.kanald.com.tr/guller-ve-gunahlar/bolumler", "youtube": "https://www.youtube.com/@KanalD" },
+    "official": {
+      "website": "https://www.kanald.com.tr/guller-ve-gunahlar",
+      "episodes": "https://www.kanald.com.tr/guller-ve-gunahlar/bolumler",
+      "youtube": "https://www.youtube.com/@KanalD"
+    },
     "cast": [],
     "seasons": [
-      { "number": 1, "label": "فصل اول", "episodes": [
-        { "number": 1, "date": "2026-09-12", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.kanald.com.tr/guller-ve-gunahlar/bolumler" }
-      ] }
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2026-09-12",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.kanald.com.tr/guller-ve-gunahlar/bolumler"
+          }
+        ]
+      }
     ]
   },
   "kizilcik-serbeti": {
@@ -258,13 +469,27 @@
     "day": "جمعه",
     "dayIndex": 4,
     "airing": "جمعه‌ها",
-    "genre": ["درام", "خانوادگی", "اجتماعی"],
+    "genre": [
+      "درام",
+      "خانوادگی",
+      "اجتماعی"
+    ],
     "hero": "",
     "fragman": "https://www.showtv.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.showtv.com.tr/dizi/tanitim/kizilcik-serbeti", "episodes": "https://www.showtv.com.tr/", "youtube": "https://www.youtube.com/@showtv" },
+    "official": {
+      "website": "https://www.showtv.com.tr/dizi/tanitim/kizilcik-serbeti",
+      "episodes": "https://www.showtv.com.tr/",
+      "youtube": "https://www.youtube.com/@showtv"
+    },
     "cast": [],
-    "seasons": [ { "number": 4, "label": "فصل جدید", "episodes": [] } ]
+    "seasons": [
+      {
+        "number": 4,
+        "label": "فصل جدید",
+        "episodes": []
+      }
+    ]
   },
   "tuzlu-kahve": {
     "slug": "tuzlu-kahve",
@@ -279,18 +504,53 @@
     "day": "سه‌شنبه",
     "dayIndex": 1,
     "airing": "سه‌شنبه‌ها",
-    "genre": ["درام", "عاشقانه"],
+    "genre": [
+      "درام",
+      "عاشقانه"
+    ],
     "hero": "",
     "fragman": "https://www.startv.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.startv.com.tr/dizi/tuzlu-kahve", "episodes": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler", "youtube": "https://www.youtube.com/@startv" },
+    "official": {
+      "website": "https://www.startv.com.tr/dizi/tuzlu-kahve",
+      "episodes": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler",
+      "youtube": "https://www.youtube.com/@startv"
+    },
     "cast": [],
     "seasons": [
-      { "number": 1, "label": "فصل اول", "episodes": [
-        { "number": 1, "date": "2026-09-01", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler" },
-        { "number": 2, "date": "2026-09-08", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler" },
-        { "number": 3, "date": "2026-09-15", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler" }
-      ] }
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2026-09-01",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler"
+          },
+          {
+            "number": 2,
+            "date": "2026-09-08",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler"
+          },
+          {
+            "number": 3,
+            "date": "2026-09-15",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.startv.com.tr/dizi/tuzlu-kahve/bolumler"
+          }
+        ]
+      }
     ]
   },
   "sevdigim-sensin": {
@@ -306,16 +566,35 @@
     "day": "پنجشنبه",
     "dayIndex": 3,
     "airing": "پنجشنبه‌ها",
-    "genre": ["درام", "عاشقانه"],
+    "genre": [
+      "درام",
+      "عاشقانه"
+    ],
     "hero": "",
     "fragman": "https://www.startv.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.startv.com.tr/dizi/sevdigim-sensin", "episodes": "https://www.startv.com.tr/dizi/sevdigim-sensin/bolumler", "youtube": "https://www.youtube.com/@startv" },
+    "official": {
+      "website": "https://www.startv.com.tr/dizi/sevdigim-sensin",
+      "episodes": "https://www.startv.com.tr/dizi/sevdigim-sensin/bolumler",
+      "youtube": "https://www.youtube.com/@startv"
+    },
     "cast": [],
     "seasons": [
-      { "number": 1, "label": "فصل اول", "episodes": [
-        { "number": 1, "date": "2026-09-17", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.startv.com.tr/dizi/sevdigim-sensin/bolumler" }
-      ] }
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2026-09-17",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.startv.com.tr/dizi/sevdigim-sensin/bolumler"
+          }
+        ]
+      }
     ]
   },
   "gonul-dagi": {
@@ -331,13 +610,26 @@
     "day": "شنبه",
     "dayIndex": 5,
     "airing": "شنبه‌ها",
-    "genre": ["درام", "خانوادگی"],
+    "genre": [
+      "درام",
+      "خانوادگی"
+    ],
     "hero": "",
     "fragman": "https://www.trt1.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.trt1.com.tr/diziler/gonul-dagi", "episodes": "https://www.trt1.com.tr/diziler/gonul-dagi/bolumler", "youtube": "https://www.youtube.com/@trt1" },
+    "official": {
+      "website": "https://www.trt1.com.tr/diziler/gonul-dagi",
+      "episodes": "https://www.trt1.com.tr/diziler/gonul-dagi/bolumler",
+      "youtube": "https://www.youtube.com/@trt1"
+    },
     "cast": [],
-    "seasons": [ { "number": 6, "label": "فصل جدید", "episodes": [] } ]
+    "seasons": [
+      {
+        "number": 6,
+        "label": "فصل جدید",
+        "episodes": []
+      }
+    ]
   },
   "evlilik-guzeldir": {
     "slug": "evlilik-guzeldir",
@@ -352,17 +644,44 @@
     "day": "دوشنبه",
     "dayIndex": 0,
     "airing": "دوشنبه‌ها",
-    "genre": ["کمدی", "درام"],
+    "genre": [
+      "کمدی",
+      "درام"
+    ],
     "hero": "",
     "fragman": "https://www.trt1.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.trt1.com.tr/diziler/evlilik-guzeldir", "episodes": "https://www.trt1.com.tr/diziler/evlilik-guzeldir/bolumler", "youtube": "https://www.youtube.com/@trt1" },
+    "official": {
+      "website": "https://www.trt1.com.tr/diziler/evlilik-guzeldir",
+      "episodes": "https://www.trt1.com.tr/diziler/evlilik-guzeldir/bolumler",
+      "youtube": "https://www.youtube.com/@trt1"
+    },
     "cast": [],
     "seasons": [
-      { "number": 1, "label": "فصل اول", "episodes": [
-        { "number": 1, "date": "2026-09-07", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.trt1.com.tr/diziler/evlilik-guzeldir/bolumler" },
-        { "number": 2, "date": "2026-09-14", "title": "", "image": "", "images": [], "summary": "", "source": "https://www.trt1.com.tr/diziler/evlilik-guzeldir/bolumler" }
-      ] }
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2026-09-07",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.trt1.com.tr/diziler/evlilik-guzeldir/bolumler"
+          },
+          {
+            "number": 2,
+            "date": "2026-09-14",
+            "title": "",
+            "image": "",
+            "images": [],
+            "summary": "",
+            "source": "https://www.trt1.com.tr/diziler/evlilik-guzeldir/bolumler"
+          }
+        ]
+      }
     ]
   },
   "anne-yarisi": {
@@ -378,13 +697,25 @@
     "day": "پنجشنبه",
     "dayIndex": 3,
     "airing": "پنجشنبه‌ها (از ۲۴ سپتامبر)",
-    "genre": ["درام"],
+    "genre": [
+      "درام"
+    ],
     "hero": "",
     "fragman": "https://www.nowtv.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.nowtv.com.tr/anne-yarisi", "episodes": "https://www.nowtv.com.tr/anne-yarisi/bolumler", "youtube": "https://www.youtube.com/@nowtv" },
+    "official": {
+      "website": "https://www.nowtv.com.tr/anne-yarisi",
+      "episodes": "https://www.nowtv.com.tr/anne-yarisi/bolumler",
+      "youtube": "https://www.youtube.com/@nowtv"
+    },
     "cast": [],
-    "seasons": [ { "number": 1, "label": "فصل اول", "episodes": [] } ]
+    "seasons": [
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": []
+      }
+    ]
   },
   "omur-usta": {
     "slug": "omur-usta",
@@ -399,13 +730,25 @@
     "day": "یکشنبه",
     "dayIndex": 6,
     "airing": "یکشنبه‌ها (از ۲۰ سپتامبر)",
-    "genre": ["درام"],
+    "genre": [
+      "درام"
+    ],
     "hero": "",
     "fragman": "https://www.nowtv.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.nowtv.com.tr/omur-usta", "episodes": "https://www.nowtv.com.tr/omur-usta/bolumler", "youtube": "https://www.youtube.com/@nowtv" },
+    "official": {
+      "website": "https://www.nowtv.com.tr/omur-usta",
+      "episodes": "https://www.nowtv.com.tr/omur-usta/bolumler",
+      "youtube": "https://www.youtube.com/@nowtv"
+    },
     "cast": [],
-    "seasons": [ { "number": 1, "label": "فصل اول", "episodes": [] } ]
+    "seasons": [
+      {
+        "number": 1,
+        "label": "فصل اول",
+        "episodes": []
+      }
+    ]
   },
   "masterchef-turkiye": {
     "slug": "masterchef-turkiye",
@@ -420,12 +763,25 @@
     "day": "هر شب",
     "dayIndex": 7,
     "airing": "بیشتر شب‌های هفته",
-    "genre": ["مسابقه", "آشپزی"],
+    "genre": [
+      "مسابقه",
+      "آشپزی"
+    ],
     "hero": "",
     "fragman": "https://www.tv8.com.tr/",
     "synopsis": "",
-    "official": { "website": "https://www.tv8.com.tr/masterchef-turkiye", "episodes": "https://www.tv8.com.tr/masterchef-turkiye/bolumler", "youtube": "https://www.youtube.com/@tv8" },
+    "official": {
+      "website": "https://www.tv8.com.tr/masterchef-turkiye",
+      "episodes": "https://www.tv8.com.tr/masterchef-turkiye/bolumler",
+      "youtube": "https://www.youtube.com/@tv8"
+    },
     "cast": [],
-    "seasons": [ { "number": 1, "label": "فصل جاری", "episodes": [] } ]
+    "seasons": [
+      {
+        "number": 1,
+        "label": "فصل جاری",
+        "episodes": []
+      }
+    ]
   }
 }

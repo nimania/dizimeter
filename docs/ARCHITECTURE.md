@@ -64,9 +64,33 @@ HTML.
 | `/kanal/<slug>/` | One network: its series + latest‑day placements |
 | `/dizi/<slug>/` | Series profile |
 | `/dizi/<slug>/bolum-<n>/` | Episode profile |
+| `/oyuncu/<slug>/` | Actor profile |
+| `/karakter/<slug>/` | Character profile |
+| `/diziler/` `/oyuncular/` `/karakterler/` | List pages (series / actors / characters) |
+| `/ozetler/` `/fragmanlar/` | Recap archive / trailer archive |
+| `/takvim/` | Broadcast calendar (Turkey / Iran / US Pacific) |
+| `/ara/` | Search |
+| `/sitemap.xml` `/robots.txt` | SEO |
 
-`dizi` (series) and `kanal` (channel) are Turkish words, kept as stable path
-segments. Slugs are ASCII (e.g. `sevdan-bir-ates`, `show-tv`).
+`dizi` (series), `kanal` (channel), `oyuncu` (actor), `karakter` (character),
+`takvim` (calendar) and `ara` (search) are Turkish/Persian path words, kept as stable
+segments. Slugs are ASCII (e.g. `sevdan-bir-ates`, `show-tv`, `murat-unalmis`).
+
+### Derived data (actors & characters)
+
+Actors and characters are **not** stored in their own file — the generator derives
+them from each series’ `cast` at build time: an actor slug from the actor’s name,
+a character slug from `<series-slug>-<character>`. The same `slugify()` runs in the
+generator and in `dizimeter.js`, so client‑side links resolve to the generated URLs.
+Add or edit cast in `series.json` and the actor/character pages and lists update.
+
+### SEO & search
+
+Because meta tags are written **statically** by the generator (title, description,
+canonical, Open Graph, Twitter card, and JSON‑LD per page), crawlers get complete
+metadata even though the page body is filled client‑side. The generator also emits
+`sitemap.xml`, `robots.txt`, and `data/search-index.json` (used by `/ara/` and the
+home search box).
 
 ## Rating join
 

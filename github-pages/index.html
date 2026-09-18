@@ -2,17 +2,28 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ریتینگ تازه برنامه‌ها و سریال‌های ترکی با منبع رسمی TİAK — Total، AB و ABC1، تاریخچهٔ ۱۰ روز، و پروفایل هر سریال و قسمت">
   <title>مشکی مدیا | ریتینگ تازه تلویزیون ترکیه</title>
-  <link rel="icon" href="images/meshki-media-logo.png" type="image/png"><link rel="apple-touch-icon" href="images/meshki-media-logo.png"><link rel="stylesheet" href="styles.css?v=20260918b">
+  <meta name="description" content="مشکی مدیا: ریتینگ روزانهٔ تلویزیون ترکیه (Total، AB، ABC1)، پروفایل سریال‌ها و قسمت‌ها، بازیگران و کاراکترها، تقویم پخش و آرشیو خلاصه‌ها و فراگمان‌ها — با منبع رسمی TİAK.">
+  <link rel="canonical" href="https://nimania.github.io/meshkimedia/">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="مشکی مدیا">
+  <meta property="og:title" content="مشکی مدیا | ریتینگ تازه تلویزیون ترکیه"><meta property="og:description" content="ریتینگ روزانهٔ تلویزیون ترکیه، پروفایل سریال‌ها و قسمت‌ها، بازیگران، تقویم پخش و آرشیوها.">
+  <meta property="og:url" content="https://nimania.github.io/meshkimedia/"><meta property="og:image" content="https://nimania.github.io/meshkimedia/images/meshki-media-logo.png"><meta property="og:locale" content="fa_IR">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="مشکی مدیا"><meta name="twitter:image" content="https://nimania.github.io/meshkimedia/images/meshki-media-logo.png">
+  <link rel="icon" href="images/meshki-media-logo.png" type="image/png"><link rel="apple-touch-icon" href="images/meshki-media-logo.png">
+  <link rel="stylesheet" href="styles.css?v=20260918c">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"مشکی مدیا","alternateName":"Meshki Media","url":"https://nimania.github.io/meshkimedia/","potentialAction":{"@type":"SearchAction","target":"https://nimania.github.io/meshkimedia/ara/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 </head>
 <body>
   <header class="app-header">
     <a class="brand" href="./"><img class="brand-logo" src="images/meshki-media-logo.png" alt="مشکی مدیا" width="34" height="34"><span class="brand-text"><strong>مشکی مدیا</strong><span>هوش سریال ترکی</span></span></a>
-    <div class="header-actions"><button id="theme-toggle" class="icon-button" aria-label="روشن یا تیره">◐</button><a class="icon-button" href="https://github.com/nimania/meshkimedia" aria-label="گیت‌هاب">↗</a></div>
+    <div class="header-actions"><button id="theme-toggle" class="icon-button" aria-label="روشن یا تیره">◐</button><a class="icon-button" href="ara/" aria-label="جستجو">⌕</a></div>
   </header>
+  <nav class="site-nav" aria-label="بخش‌ها"><a href="./" class="on">خانه</a><a href="diziler/">سریال‌ها</a><a href="oyuncular/">بازیگران</a><a href="karakterler/">کاراکترها</a><a href="takvim/">تقویم</a><a href="ozetler/">خلاصه‌ها</a><a href="fragmanlar/">فراگمان‌ها</a><a href="kanal/">شبکه‌ها</a><a href="ara/">جستجو</a></nav>
+
   <main class="app-shell">
-    <section class="intro"><h1>ریتینگ تلویزیون ترکیه، در یک نگاه</h1><p>آخرین روز ثبت‌شده: <span id="fetched-at">در حال دریافت…</span> · منبع رسمی TİAK</p></section>
+    <section class="intro"><h1>ریتینگ تلویزیون ترکیه، در یک نگاه</h1><p>آخرین روز ثبت‌شده: <span id="fetched-at">در حال دریافت…</span> · منبع رسمی TİAK</p>
+      <form class="home-search" action="ara/" method="get"><input name="q" type="search" placeholder="جستجوی سریال، بازیگر، کاراکتر…" aria-label="جستجو"><button type="submit">جستجو</button></form>
+    </section>
 
     <section class="summary-card" aria-label="خلاصه ریتینگ">
       <div class="summary-number"><strong id="summary-count">—</strong><span>برنامه در جدول</span></div><div class="summary-number"><strong id="summary-date">—</strong><span>تاریخ</span></div><div class="summary-number"><strong id="summary-top">—</strong><span>بالاترین</span></div>
@@ -23,12 +34,9 @@
 
     <section id="ratings" class="feed-section">
       <div class="feed-label"><span>جدول ریتینگ</span><i></i></div>
-
       <div class="cat-tabs" id="cat-tabs" role="group" aria-label="حالت ریتینگ"></div>
       <p class="cat-note" id="cat-note"></p>
-
       <div class="day-strip"><span class="day-strip-label">۱۰ روز اخیر:</span><div class="day-tabs" id="day-tabs"></div></div>
-
       <div class="filter-row" role="group" aria-label="فیلتر برنامه‌ها">
         <button class="filter active" data-filter="all">همه</button>
         <button class="filter" data-filter="series">سریال‌ها</button>
@@ -36,7 +44,6 @@
         <button class="filter" data-filter="news">خبر</button>
         <select id="net-filter" class="net-filter" aria-label="فیلتر شبکه"></select>
       </div>
-
       <div id="loading" class="notice">در حال بارگذاری آخرین دادهٔ منتشرشده…</div>
       <div id="error" class="notice error" hidden>داده موقتاً در دسترس نیست؛ سامانه دوباره تلاش می‌کند.</div>
       <div id="ratings-list" class="ratings-list" hidden></div>
@@ -48,18 +55,18 @@
       <a class="see-all" href="kanal/">فهرست کامل شبکه‌ها ←</a>
     </section>
 
-    <section id="method" class="method-card"><span>شفافیت داده</span><h2>عدد حدس نمی‌زنیم.</h2><p>ریتینگ Total مستقیماً از جدول عمومی TİAK خوانده می‌شود. رتبه‌بندی AB و ABC1 از اعلان‌های رسمی روزانه است؛ اعداد دقیق این دو دسته نیازمند دادهٔ عضویت TİAK است و تا آن زمان تنها رتبه نمایش داده می‌شود. Dizilah تنها مرجع بررسی ثانویه است و محافظ ضدربات آن دور زده نمی‌شود.</p><a href="https://tiak.com.tr/" target="_blank" rel="noreferrer">مشاهده منبع رسمی ↗</a></section>
+    <section id="method" class="method-card"><span>شفافیت داده</span><h2>عدد حدس نمی‌زنیم.</h2><p>ریتینگ Total مستقیماً از جدول عمومی TİAK خوانده می‌شود. رتبه‌بندی AB و ABC1 از اعلان‌های رسمی روزانه است؛ اعداد دقیق این دو دسته نیازمند دادهٔ عضویت TİAK است و تا آن زمان تنها رتبه نمایش داده می‌شود.</p><a href="https://tiak.com.tr/" target="_blank" rel="noreferrer">مشاهده منبع رسمی ↗</a></section>
   </main>
 
   <nav class="bottom-nav" aria-label="ناوبری اصلی">
     <a class="active" href="#ratings"><b>☰</b><span>ریتینگ</span></a>
-    <a href="#leader"><b>⌁</b><span>صدرنشین</span></a>
-    <a href="kanal/"><b>▦</b><span>شبکه‌ها</span></a>
-    <a href="#method"><b>✓</b><span>منبع</span></a>
+    <a href="diziler/"><b>▤</b><span>سریال‌ها</span></a>
+    <a href="takvim/"><b>▦</b><span>تقویم</span></a>
+    <a href="ara/"><b>⌕</b><span>جستجو</span></a>
   </nav>
 
   <script>window.DM = { root: "" };</script>
-  <script src="dizimeter.js?v=20260918" defer></script>
-  <script src="home.js?v=20260918" defer></script>
+  <script src="dizimeter.js?v=20260918c" defer></script>
+  <script src="home.js?v=20260918c" defer></script>
 </body>
 </html>

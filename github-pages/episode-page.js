@@ -72,10 +72,6 @@
     else navHtml.push(`<span></span>`);
     if (next) navHtml.push(`<a class="ep-nav-btn left" href="${D.ROOT}dizi/${s.slug}/bolum-${next.number}/"><span>قسمت بعدی</span><b>← قسمت ${D.fmtInt(next.number)}</b></a>`);
     $("#ep-nav").innerHTML = navHtml.join("");
-
-    // Bottom nav links
-    $("#nav-series").href = `${D.ROOT}dizi/${s.slug}/`;
-    $("#nav-network").href = net ? `${D.ROOT}kanal/${net.slug}/` : `${D.ROOT}`;
   } catch (e) {
     console.error(e);
     $("#ep-summary").textContent = "اطلاعات این قسمت موقتاً در دسترس نیست.";
